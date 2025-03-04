@@ -8,3 +8,4 @@ KU Sejong C class
 - 첫 번째 변경 커밋입니다.
 - Second change
 - Third change
+- Test CLI commit
