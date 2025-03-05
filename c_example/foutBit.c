@@ -29,10 +29,10 @@ int main(void){
 
 void printAttrib(unsigned char attr){
     printf("attr %d\n", attr);
-    printf("BOLD : %d\n", !(~(attr | ~BOLD)));
-    printf("ITALIC : %d\n", !(~(attr | ~ITALIC)>>1));
-    printf("SHADOW : %d\n", !(~(attr | ~SHADOW)>>2));
-    printf("UNDERLINE : %d\n", !(~(attr | ~UNDERLINE)>>3));
+    printf("BOLD : %d\n", (attr & BOLD));
+    printf("ITALIC : %d\n", ((attr & ITALIC)>>1));
+    printf("SHADOW : %d\n", ((attr & SHADOW)>>2));
+    printf("UNDERLINE : %d\n", ((attr & UNDERLINE)>>3));
     printf("------------------------------------\n");
 
 }
