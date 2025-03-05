@@ -9,3 +9,8 @@ KU Sejong C class
 - Second change
 - Third change
 - Test CLI commit
+
+---
+## 2025-03-05
+---
+ - cli push test
