@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
     int score;
     if (argc < 2)
@@ -12,27 +12,27 @@ int main(int argc, char* argv[])
     }
     score = atoi(argv[1]);
 
-    switch(score/10)
+    switch (score / 10)
     {
-        case 10:
-        case 9:
-        printf("SCORE : %d === A\n",score);
+    case 10:
+    case 9:
+        printf("SCORE : %d === A\n", score);
         break;
 
-        case 8:
-        printf("SCORE : %d === B\n",score);
+    case 8:
+        printf("SCORE : %d === B\n", score);
         break;
 
-        case 7:
-        printf("SCORE : %d === C\n",score);
+    case 7:
+        printf("SCORE : %d === C\n", score);
         break;
 
-        case 6:
-        printf("SCORE : %d === D\n",score);
+    case 6:
+        printf("SCORE : %d === D\n", score);
         break;
 
-        default:
-        printf("SCORE : %d === F\n",score);
+    default:
+        printf("SCORE : %d === F\n", score);
         break;
     }
     return 0;

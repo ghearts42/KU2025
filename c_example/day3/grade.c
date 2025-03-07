@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
     int score;
     if (argc < 2)
@@ -14,23 +14,23 @@ int main(int argc, char* argv[])
 
     if (score >= 90)
     {
-        printf("SCORE : %d === A\n",score);
+        printf("SCORE : %d === A\n", score);
     }
     else if (score >= 80)
     {
-        printf("SCORE : %d === B\n",score);
+        printf("SCORE : %d === B\n", score);
     }
     else if (score >= 70)
     {
-        printf("SCORE : %d === C\n",score);
+        printf("SCORE : %d === C\n", score);
     }
     else if (score >= 60)
     {
-        printf("SCORE : %d === D\n",score);
+        printf("SCORE : %d === D\n", score);
     }
     else
     {
-        printf("SCORE : %d === F\n",score);
+        printf("SCORE : %d === F\n", score);
     }
     return 0;
 }
