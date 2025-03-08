@@ -25,6 +25,7 @@ int main(void)
         for (int i = 0; i < 3; ++i)
         {
             RandomNumber[i] = rand() % 10;
+            // printf("%d번째 숫자 : %d\n", i + 1, RandomNumber[i]); //무작위 숫자가 겹치는지 테스트하기위한 코드입니다.
         }
     } while (RandomNumber[0] == RandomNumber[1] || RandomNumber[1] == RandomNumber[2] || RandomNumber[0] == RandomNumber[2]);
     printf("0에서 9 사이의 무작위 숫자가 주어졌습니다.\n");
@@ -36,7 +37,7 @@ int main(void)
         for (int j = 0; j < 3; ++j)
         {
             scanf("%d", &myball[j]);
-            printf("입력한 숫자 %d : %d\n", j, myball[j]);
+            printf("%d번째 입력한 숫자 : %d\n", j + 1, myball[j]);
         }
         for (int k = 0; k < 3; ++k)
         {
@@ -62,7 +63,7 @@ int main(void)
         }
         else
         {
-            printf("%d 스트라이크 %d 볼\n다시 해봅시다.\n", game_strike, game_ball);
+            printf("=================\n게임 결과\n%d 스트라이크 %d 볼\n=================\n다시 해봅시다.\n=================\n", game_strike, game_ball);
             game_strike = 0;
             game_ball = 0; // 스트라이크가 3개 미만인 경우 다시 시작
         }
