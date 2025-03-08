@@ -11,51 +11,60 @@
 
 int main(void)
 {
-    srand((unsigned int)time(NULL));
-    int ball[3] = {0};
+    srand((unsigned int)time(NULL)); // 랜덤한 숫자를 불러 오기 위해 난수를 생성하는 함수
+
+    int RandomNumber[3] = {0}; // 무작위 숫자를 부여받는 배열
+    int myball[3] = {0};       //
+    int game_strike = 0;
+    int game_ball = 0;
+
+    // RandomNumber에 무작위 숫자를 부여하는 함수
+    //  do while을 사용하여 같은 값이 2개 이상이라면 다시 숫자를 부여함
     do
     {
         for (int i = 0; i < 3; ++i)
         {
-            ball[i] = rand() % 10;
-            printf("%d번 숫자 : %d\n", i + 1, ball[i]);
+            RandomNumber[i] = rand() % 10;
         }
-    } while (ball[1] == ball[2] || ball[2] == ball[3] || ball[1] == ball[3]);
+    } while (RandomNumber[0] == RandomNumber[1] || RandomNumber[1] == RandomNumber[2] || RandomNumber[0] == RandomNumber[2]);
+    printf("0에서 9 사이의 무작위 숫자가 주어졌습니다.\n");
 
-    int myball[3] = {0};
-    printf("무작위 숫자가 주어졌습니다.\n숫자를 입력 : ");
-    for (int j = 0; j < 3; ++j)
+    // 입력 숫자 판단하여 스트라이크 볼 출력하는 함수
+    while (1) // While을 사용하여 3스트라이크가 나오지 않는 경우 다시 숫자를 입력함
     {
-        scanf("%d", &myball[j]);
-        printf("입력한 숫자 %d : %d\n", j, myball[j]);
-    }
-
-    // 입력 숫자 판단하여 스트라이크 볼 출력
-    int game_strike = 0;
-    int game_ball = 0;
-    for (int k = 0; k < 3; ++k)
-    {
-        for (int l = 0; l < 3; ++l)
+        printf("숫자를 입력 : ");
+        for (int j = 0; j < 3; ++j)
         {
-            if (ball[k] == myball[l])
+            scanf("%d", &myball[j]);
+            printf("입력한 숫자 %d : %d\n", j, myball[j]);
+        }
+        for (int k = 0; k < 3; ++k)
+        {
+            for (int l = 0; l < 3; ++l)
             {
-                if (k == l)
+                if (RandomNumber[k] == myball[l])
                 {
-                    game_strike += 1;
-                }
-                else
-                {
-                    game_ball += 1;
+                    if (k == l)
+                    {
+                        game_strike += 1;
+                    }
+                    else
+                    {
+                        game_ball += 1;
+                    }
                 }
             }
         }
-    }
-    if (game_strike == 3)
-    {
-        printf("승리!");
-    }
-    else
-    {
-        printf("%d 스트라이크 %d 볼", game_strike, game_ball);
+        if (game_strike == 3)
+        {
+            printf("승리!\n");
+            break; // 3스트라이크인 경우 승리 출력 후 게임 종료
+        }
+        else
+        {
+            printf("%d 스트라이크 %d 볼\n다시 해봅시다.\n", game_strike, game_ball);
+            game_strike = 0;
+            game_ball = 0; // 스트라이크가 3개 미만인 경우 다시 시작
+        }
     }
 }
