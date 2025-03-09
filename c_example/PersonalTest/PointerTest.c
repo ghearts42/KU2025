@@ -6,9 +6,14 @@ int main()
     int b = 20;
 
     int *pa;
-    int pa = &a;
+    *pa = a;
     int *pb;
-    int pb = &b;
+    pb = &b;
 
     printf("%d, %d\n", *pa, *pb);
+
+    int c = 10;
+    int *pc = &c;
+    *pc = 20;
+    printf("%d", *pc);
 }
