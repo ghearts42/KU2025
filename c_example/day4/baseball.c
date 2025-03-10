@@ -17,6 +17,7 @@ int main(void)
     int myball[3] = {0};       //
     int game_strike = 0;
     int game_ball = 0;
+    int count = 1;
 
     // RandomNumber에 무작위 숫자를 부여하는 함수
     //  do while을 사용하여 같은 값이 2개 이상이라면 다시 숫자를 부여함
@@ -25,9 +26,10 @@ int main(void)
         for (int i = 0; i < 3; ++i)
         {
             RandomNumber[i] = rand() % 10;
-            // printf("%d번째 숫자 : %d\n", i + 1, RandomNumber[i]); //무작위 숫자가 겹치는지 테스트하기위한 코드입니다.
+            printf("%d번째 숫자 : %d\n", i + 1, RandomNumber[i]); // 무작위 숫자가 겹치는지 테스트하기위한 코드입니다.
         }
     } while (RandomNumber[0] == RandomNumber[1] || RandomNumber[1] == RandomNumber[2] || RandomNumber[0] == RandomNumber[2]);
+
     printf("0에서 9 사이의 무작위 숫자가 주어졌습니다.\n");
 
     // 입력 숫자 판단하여 스트라이크 볼 출력하는 함수
@@ -59,6 +61,7 @@ int main(void)
         if (game_strike == 3)
         {
             printf("승리!\n");
+            printf("시도 횟수 : %d", count);
             break; // 3스트라이크인 경우 승리 출력 후 게임 종료
         }
         else
@@ -66,6 +69,8 @@ int main(void)
             printf("=================\n게임 결과\n%d 스트라이크 %d 볼\n=================\n다시 해봅시다.\n=================\n", game_strike, game_ball);
             game_strike = 0;
             game_ball = 0; // 스트라이크가 3개 미만인 경우 다시 시작
+            printf("시도 횟수 : %d", count);
+            count += 1;
         }
     }
 }
