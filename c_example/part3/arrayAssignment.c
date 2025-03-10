@@ -22,7 +22,7 @@ int main(void)
         printf("num2[%d] : %d\n", i, num2[i]);
     }
 
-    // shallow copy
+    // shallow copy를 통해 num과 num3은 같은 메모리를 공유함
     int *num3;
     num3 = num;
     num3[2] = 23;
