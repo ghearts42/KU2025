@@ -2,5 +2,6 @@
   "files.associations": {
     "mystring.h": "c",
     "arrayfunctiontest.h": "c"
-  }
+  },
+  "cmake.sourceDirectory": "/home/hjpubuntu22045/korea_c/sqlquery"
 }
