@@ -15,5 +15,8 @@ int main()
     int c = 10;
     int *pc = &c;
     *pc = 20;
-    printf("%d", *pc);
+
+    int **ppc = &c;
+
+        printf("%d", *pc);
 }
