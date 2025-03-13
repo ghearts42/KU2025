@@ -117,23 +117,28 @@ void add_books(MYSQL *conn)
     printf("---도서 추가---\n");
 
     // 정보 입력 scanf;
+    printf("도서 ID : ");
     scanf("%d", &newbook.bookid);
+    printf("도서명 : ");
     scanf(" %s", newbook.bookname);
+    printf("출판사 : ");
     scanf(" %s", newbook.publisher);
+    printf("가격 : ");
     scanf("%d", &newbook.price);
 
+    // printf("%d %s %s %d\n", newbook.bookid, newbook.bookname, newbook.publisher, newbook.price);
+
     // query문 작성 strcpy... "insert ..."
-    printf("%d %s %s %d\n", newbook.bookid, newbook.bookname, newbook.publisher, newbook.price);
 
     sprintf(query, "insert into Book values (%d, '%s', '%s', %d)", newbook.bookid, newbook.bookname, newbook.publisher, newbook.price);
 
     if (mysql_query(conn, query))
     {
-        printf("추가 실패");
+        printf("추가 실패 : %s\n", mysql_error(conn));
     }
     else
     {
-        printf("성공");
+        printf("성공\n");
     }
 
     return;
