@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/foutBit.dir/foutBit.c.o -o foutBit 
