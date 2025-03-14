@@ -1,0 +1,1 @@
+ABputs로 문자가 간다.fprintf로 문자가 간다.

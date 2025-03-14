@@ -1,7 +1,8 @@
 {
   "files.associations": {
     "mystring.h": "c",
-    "arrayfunctiontest.h": "c"
+    "arrayfunctiontest.h": "c",
+    "mysql.h": "c"
   },
   "cmake.sourceDirectory": "/home/hjpubuntu22045/korea_c"
 }
