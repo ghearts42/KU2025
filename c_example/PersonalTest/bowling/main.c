@@ -26,12 +26,13 @@
 #define TRY 2
 #define PLAYER 2
 
-int frame()
+int main()
 {
     int Score[PLAYER] = {0};
-    int game[TRY][FRAME][PLAYER];
-    int P_Score = 0;
-
+    int game[FRAME][TRY][PLAYER];
+    int FrameScore = 0;
+    int Base_Score = 0;
+    int Bonus_Score;
     for (int i = 0; i < FRAME; ++i)
     {
         for (int j = 0; j < PLAYER; ++j)
@@ -39,17 +40,60 @@ int frame()
             for (int k = 0; k < TRY; ++k)
             {
                 printf("플레이어 %d : %d번 프레임 : %d번째 시도 : ", j + 1, i + 1, k + 1);
-                scanf("%d", &game[i][j][k]);
-
-                P_Score += game[i][j][k];
-
-                // Score[j] += game[i][j][k];
+                scanf("%d", &game[i][k][j]);
+                FrameScore += game[i][k][j];
+                if (game[i][0][j] == 10)
+                {
+                    printf("STRIKE\n");
+                    game[i][1][j] = 0;
+                    k += 1;
+                }
+                else if (FrameScore == 10)
+                {
+                    printf("SPARE\n");
+                }
+                else if (FrameScore > 10)
+                {
+                    printf("10점을 넘을 수 없습니다\n");
+                    FrameScore -= game[i][k][j];
+                    k -= 1;
+                    continue;
+                }
             }
+            FrameScore = 0;
         }
+    }
+    
+    for(int i = 0; i < PLAYER; ++i)
+    {
+        Base_Score = 0;
+        Bonus_Score = 0;
+        for (int j = 0; j < FRAME; ++j)
+        {
+            for(int k = 0; k < TRY; ++k)
+            {
+                FrameScore += game[j][k][i];
+                Base_Score += game[j][k][i];
+                if(FrameScore == 10 && game[j][0][i] == 10)
+                {
+                    for(int l = 0; l < TRY;++l)
+                    {
+                        Bonus_Score += game[j+1][k][i];
+                    }
+                }
+                else if(FrameScore == 10)
+                {
+                    Bonus_Score += game[j+1][0][i];
+                }
+            }
+            FrameScore = 0;
+        }
+        printf("%d, %d\n", Base_Score, Bonus_Score);
+        Score[i] = Base_Score + Bonus_Score;
     }
 
     printf("플레이어 1 최종 점수 : %d\n", Score[0]);
-    printf("플레이어 1 최종 점수 : %d\n", Score[1]);
+    printf("플레이어 2 최종 점수 : %d\n", Score[1]);
 
     return 0;
 }
