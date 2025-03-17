@@ -1,4 +1,5 @@
 #include "bowling.h"
+#include <dotenv.h>
 
 MYSQL *conn;
 MYSQL_RES *res;
