@@ -28,15 +28,15 @@
 
 int main()
 {
-    //변수선언
+    // 변수선언
 
     int Score[PLAYER] = {0};
     int game[FRAME][TRY][PLAYER];
     int FrameScore = 0;
-    int Base_Score = 0;
+    int Base_Score;
     int Bonus_Score;
 
-    //기본 점수 입력
+    // 기본 점수 입력
 
     for (int i = 0; i < FRAME - 1; ++i)
     {
@@ -69,18 +69,18 @@ int main()
         }
     }
 
-    //마지막 프레임에서 스트라이크 혹은 스페어가 났을 때의 추가 프레임
+    // 마지막 프레임에서 스트라이크 혹은 스페어가 났을 때의 추가 프레임
 
     for (int i = 0; i < PLAYER; ++i)
     {
-        if(game[FRAME - 2][0][i] == 10)
+        if (game[FRAME - 2][0][i] == 10)
         {
             printf("last frame(strike)\n");
-            for(int j = 0; j < TRY; ++j)
+            for (int j = 0; j < TRY; ++j)
             {
                 printf("플레이어 %d : 보너스 프레임 : %d번째 시도 : ", i + 1, j + 1);
-                scanf("%d", &game[FRAME-1][j][i]);
-                if(game[FRAME-1][j][i] > 10)
+                scanf("%d", &game[FRAME - 1][j][i]);
+                if (game[FRAME - 1][j][i] > 10)
                 {
                     printf("over 10\n");
                     j -= 1;
@@ -88,70 +88,72 @@ int main()
                 }
             }
         }
-        else if(game[FRAME - 2][0][i] + game[FRAME - 2][1][i] == 10)
+        else if (game[FRAME - 2][0][i] + game[FRAME - 2][1][i] == 10)
         {
             printf("last try(spare)\n");
-            do {
+            do
+            {
                 printf("플레이어 %d : 보너스 프레임 : last 시도 : ", i + 1);
-                scanf("%d", &game[FRAME-1][0][i]);
-                if (game[FRAME-1][0][i] > 10)
+                scanf("%d", &game[FRAME - 1][0][i]);
+                if (game[FRAME - 1][0][i] > 10)
                 {
                     printf("over 10\n");
                 }
-            }while (game[FRAME-1][0][i] > 10);
-            game[FRAME-1][1][i] = 0;
+            } while (game[FRAME - 1][0][i] > 10);
+            game[FRAME - 1][1][i] = 0;
         }
     }
 
-    //Base 점수 계산
+    // Base 점수 계산
 
-    for(int i = 0; i < PLAYER; ++i)
+    for (int i = 0; i < PLAYER; ++i)
     {
         Base_Score = 0;
         for (int j = 0; j < FRAME - 1; ++j)
         {
-            for(int k = 0; k < TRY; ++k)
+            for (int k = 0; k < TRY; ++k)
             {
                 Base_Score += game[j][k][i];
             }
         }
-        printf("Base : %d\n", Base_Score);
+        // printf("Base : %d\n", Base_Score);
         Score[i] += Base_Score;
     }
 
-    //Bonus 점수 계산
+    // Bonus 점수 계산
 
-    for(int i = 0; i < PLAYER; ++i)
+    for (int i = 0; i < PLAYER; ++i)
     {
         Bonus_Score = 0;
         for (int j = 0; j < FRAME - 1; ++j)
         {
-                if(game[j][0][i] == 10 && j + 1 < FRAME)
+            if (game[j][0][i] == 10 && j + 1 < FRAME)
+            {
+                if (game[j + 1][0][i] == 10 && j + 2 < FRAME)
                 {
-                    if(game[j+1][0][i] == 10 && j + 2 < FRAME)
-                    {
-                        Bonus_Score += game[j+1][0][i] + game[j+2][0][i];
-                        printf("D Strike : %d", Bonus_Score);
-                    }
-                    else
-                    {    
-                        Bonus_Score += game[j+1][0][i] + game[j+1][1][i];
-                        printf("Else : %d", Bonus_Score);
-                    }
+                    Bonus_Score += game[j + 1][0][i] + game[j + 2][0][i];
+                    // printf("D Strike : %d", Bonus_Score);
                 }
-                else if(game[j][0][i] + game[j][1][i] == 10)
+                else
                 {
-                    Bonus_Score += game[j+1][0][i];
-                    printf("Base : %d", Bonus_Score);
+                    Bonus_Score += game[j + 1][0][i] + game[j + 1][1][i];
+                    // printf("Else : %d", Bonus_Score);
                 }
+            }
+            else if (game[j][0][i] + game[j][1][i] == 10)
+            {
+                Bonus_Score += game[j + 1][0][i];
+                // printf("Base : %d", Bonus_Score);
+            }
         }
-        printf("Bonus : %d\n", Bonus_Score);
-        // Score[i] = Base_Score + Bonus_Score;
+        // printf("Bonus : %d\n", Bonus_Score);
         Score[i] += Bonus_Score;
     }
 
-    printf("플레이어 1 최종 점수 : %d\n", Score[0]);
-    printf("플레이어 2 최종 점수 : %d\n", Score[1]);
+    for (int i = 0; i < PLAYER; ++i)
+    {
+        printf("플레이어 %d 최종 점수 : %d\n", i + 1, Score[i]);
+    }
 
     return 0;
 }
