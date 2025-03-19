@@ -8,7 +8,7 @@ int main()
     PORTC = 0x00;
     while (1)
     {
-        // _delay_ms(20);
+        _delay_ms(20);
         if (!(PINE >> 2 & _BV(PC0)))
         {
             PORTC ^= 0x01; // 버튼 반전

@@ -9,7 +9,7 @@ int main(void)
 
     while (1)
     {
-        DDRC = 0x0f; // 0011 0,1을 출력 포트로 설정
+        DDRC = 0x0f; // 1111 0,1을 출력 포트로 설정
         int LED_Data = 1;
         if (LED_Data == 1)
         {

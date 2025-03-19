@@ -1,43 +1,62 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
+#include <util/delay.h>
 
-volatile uint8_t txFlag = 0;
-volatile char txData = 0;
-
-uint8_t getch(void)
-{
-    uint8_t data;
-    while ((UCSR0A & 0x80) == 0)
-    {
-        ;
-    }
-    data = UDR0;
-    UCSR0A |= 0x80;
-    return data;
-}
+volatile uint8_t shiftFlag = 1;
 
 int main()
 {
+    uint8_t ledData = 0x01;
 
-    uint8_t numbers[] = {0x3F, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x27, 0x7F, 0x67}; // 123456789
-    uint8_t rxData;
+    DDRC = 0x0F; // 하위 비트 4개 출력
 
-    DDRA = 0xFF;
+    EIMSK = 0x50; // 0b01010000 INT4,6
 
-    UCSR0A = 0x00;
-    UCSR0B = 0x18; // 0b00011000 Rx, Tx enable
-    UCSR0C = 0x16; // 0b00010110 비동기 no Parity, 1 stop bit
-
-    UBRR0H = 0x00;
-    UBRR0L = 0x07; // 115200 BPS
+    // EICRB = 0xC8; // 0b11001000 인터럽트 5는 하강, 7는 상승
+    EICRB = _BV(ISC60) | _BV(ISC40); // 40,60 하강엣지 = 눌렸을 때 발동 41,61 상승엣지 = 스위치가 떼어졌을 때 발동
+    EIFR = 0x50;                     // 플래그 클리어
+    sei();
 
     while (1)
     {
-        rxData = getch();
-        if ((rxData >= 0x30) && (rxData <= 0x39))
+        PORTC = ledData;
+        if (shiftFlag == 1)
         {
-            PORTA = numbers[rxData - 0x30];
+            if (ledData == 0x08)
+            {
+                ledData = 0x01;
+            }
+            else
+            {
+                ledData <<= 1;
+            }
         }
+        else if (shiftFlag == 2)
+        {
+            if (ledData == 0x01)
+            {
+                ledData = 0x08;
+            }
+            else
+            {
+                ledData >>= 1;
+            }
+        }
+        _delay_ms(200);
     }
     return 0;
+}
+
+ISR(INT4_vect)
+{
+    cli();
+    shiftFlag = 1;
+    sei();
+}
+
+ISR(INT6_vect)
+{
+    cli();
+    shiftFlag = 2;
+    sei();
 }
