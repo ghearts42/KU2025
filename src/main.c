@@ -1,24 +1,43 @@
 #include <avr/io.h>
-#include <avr/delay.h>
+#include <avr/interrupt.h>
+
+volatile uint8_t txFlag = 0;
+volatile char txData = 0;
+
+uint8_t getch(void)
+{
+    uint8_t data;
+    while ((UCSR0A & 0x80) == 0)
+    {
+        ;
+    }
+    data = UDR0;
+    UCSR0A |= 0x80;
+    return data;
+}
 
 int main()
 {
-    DDRC = 0x01;  // port 0번 비트 출력
-    PORTE = 0xFF; // 풀업 설정
-    PORTC = 0x00;
+
+    uint8_t numbers[] = {0x3F, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x27, 0x7F, 0x67}; // 123456789
+    uint8_t rxData;
+
+    DDRA = 0xFF;
+
+    UCSR0A = 0x00;
+    UCSR0B = 0x18; // 0b00011000 Rx, Tx enable
+    UCSR0C = 0x16; // 0b00010110 비동기 no Parity, 1 stop bit
+
+    UBRR0H = 0x00;
+    UBRR0L = 0x07; // 115200 BPS
+
     while (1)
     {
-        // _delay_ms(20);
-        if (!(PINE >> 2 & _BV(PC0)))
+        rxData = getch();
+        if ((rxData >= 0x30) && (rxData <= 0x39))
         {
-            PORTC ^= 0x01; // 버튼 반전
-            // 버튼이 눌릴 때 까지 대기
-            while (!(PINE >> 2) & _BV(PC0))
-            {
-                _delay_ms(10);
-            }
+            PORTA = numbers[rxData - 0x30];
         }
     }
-
     return 0;
 }

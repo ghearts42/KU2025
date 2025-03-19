@@ -10,6 +10,7 @@
             "includePath": [
                 "/home/hjpubuntu22045/korea_c/src",
                 "/home/hjpubuntu22045/korea_c/lib/lcd",
+                "/home/hjpubuntu22045/korea_c/lib/uart1",
                 ""
             ],
             "browse": {
@@ -17,6 +18,7 @@
                 "path": [
                     "/home/hjpubuntu22045/korea_c/src",
                     "/home/hjpubuntu22045/korea_c/lib/lcd",
+                    "/home/hjpubuntu22045/korea_c/lib/uart1",
                     ""
                 ]
             },
