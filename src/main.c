@@ -1,48 +1,57 @@
+
 #include <avr/io.h>
 #include <avr/interrupt.h>
+#include <util/delay.h>
 
-volatile uint8_t timer2Cnt = 0;
-uint8_t LED_Data = 0x01;
-
-ISR(TIMER2_OVF_vect);
+uint8_t numbers[] = {0x3F, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x27, 0x7F, 0x67}; // 123456789
+volatile uint8_t timeS = 0x01;
 
 int main(void)
 {
-    DDRC = 0x0f; // 1111 0,1을 출력 포트로 설정
-    TCCR2 = _BV(CS22) | _BV(CS20);
-    // TCNT2 = _BV(CS22) | _BV(CS21) | _BV(CS20);
-    // TCNT0 = 112;
+    DDRA = 0xff; // 1111 | 0123 출력 포트로 설정
+    DDRE = 0x00;
+    
+    TCCR1A = 0x00;
+    TCCR1B = 0x05; // 분주비 1024 16Mhz 160000000/256 = 62500
+    // TCCR1B = _BV(CS10); // 분주비 1
 
-    TIMSK |= _BV(TOIE2);
-    // TIFR |= _BV(TOV0);
-    uint8_t direction = 0;
-    sei();
+    OCR1A = 14400;
+    OCR1B = 28800;
+
+    TIMSK = _BV(OCIE1A) | _BV(OCIE1B) | _BV(TOIE1);//0x10; //
+    // ETIFR |= _BV(ICF3);
+    sei(); // 전역 인터럽트 허용
+
+    PORTA = numbers[0];
 
     while (1)
     {
-        if (timer2Cnt == 30)
-        {
-            if (LED_Data > 0x04)
-            {
-                direction = 0;
-            }
-            if (LED_Data == 1)
-            {
-                direction = 1;
-            }
-            if (direction)
-                LED_Data <<= 1;
-            else
-                LED_Data >>= 1;
-            timer2Cnt = 0;
-        }
-        PORTC = LED_Data;
+        PORTA = numbers[timeS];
+        if(timeS > 9)
+            timeS = 0;
     }
 }
-ISR(TIMER2_OVF_vect)
+
+ISR(TIMER1_COMPA_vect)
 {
     cli();
-    TCNT2 = 112; // 113, 114, ... , 255 (144 > 0.0025 초)
-    timer2Cnt++;
+    // OCR1A += 14400;
+    timeS++;
+    sei();
+}
+
+ISR(TIMER1_COMPB_vect)
+{
+    cli();
+    // OCR1A += 14400;
+    timeS--;
+    sei();
+}
+
+ISR(TIMER1_OVF_vect)
+{
+    cli();
+    // OCR1A += 14400;
+    timeS++;
     sei();
 }
