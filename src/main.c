@@ -1,57 +1,38 @@
-
-#include <avr/io.h>
+#include "lcd.h"
+#include <avr/delay.h>
 #include <avr/interrupt.h>
-#include <util/delay.h>
-
-uint8_t numbers[] = {0x3F, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x27, 0x7F, 0x67}; // 123456789
-volatile uint8_t timeS = 0x01;
+#include <stdlib.h>
 
 int main(void)
 {
-    DDRA = 0xff; // 1111 | 0123 출력 포트로 설정
-    DDRE = 0x00;
-    
-    TCCR1A = 0x00;
-    TCCR1B = 0x05; // 분주비 1024 16Mhz 160000000/256 = 62500
-    // TCCR1B = _BV(CS10); // 분주비 1
+    DDRE = _BV(PE3);
+    TCCR3A = _BV(COM3A1) | _BV(WGM31);
+    TCCR3B = _BV(WGM33) | _BV(WGM32) | _BV(CS31);
+    // 분주비 8 FAST PWM MODE, TIMER3
+    ICR3 = 40000; // 20MS 2MHz > 2000000 > 1초 ? > 0.02초
+    OCR3A = 3000; // 40000 : 20 = X : 1.5 2000 ~ 4000 > - 90 ~ 90
 
-    OCR1A = 14400;
-    OCR1B = 28800;
-
-    TIMSK = _BV(OCIE1A) | _BV(OCIE1B) | _BV(TOIE1);//0x10; //
-    // ETIFR |= _BV(ICF3);
-    sei(); // 전역 인터럽트 허용
-
-    PORTA = numbers[0];
+    lcdInit();
+    lcdClear();
+    char buffer[10];
 
     while (1)
     {
-        PORTA = numbers[timeS];
-        if(timeS > 9)
-            timeS = 0;
+        for (uint16_t pulse = 2000; pulse <= 4000; pulse += 40)
+        {
+            OCR3A = pulse;
+            itoa(pulse, buffer, 10);
+            lcdGotoXY(0, 0);
+            lcdPrint(buffer);
+            _delay_ms(20);
+        }
+        for (uint16_t pulse = 4000; pulse >= 2000; pulse -= 40)
+        {
+            OCR3A = pulse;
+            itoa(pulse, buffer, 10);
+            lcdGotoXY(0, 0);
+            lcdPrint(buffer);
+            _delay_ms(20);
+        }
     }
-}
-
-ISR(TIMER1_COMPA_vect)
-{
-    cli();
-    // OCR1A += 14400;
-    timeS++;
-    sei();
-}
-
-ISR(TIMER1_COMPB_vect)
-{
-    cli();
-    // OCR1A += 14400;
-    timeS--;
-    sei();
-}
-
-ISR(TIMER1_OVF_vect)
-{
-    cli();
-    // OCR1A += 14400;
-    timeS++;
-    sei();
 }
