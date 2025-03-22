@@ -22,7 +22,10 @@ int main(void)
             switch_flag = PINE >> 4; // 0b1000 0b0100
         }
         PORTC = switch_flag;
-        snprintf(lcdBuffer, sizeof(lcdBuffer), "SW : 0x%02X, %c", switch_flag, switch_flag);
+        snprintf(lcdBuffer, sizeof(lcdBuffer), "SW : 0x%02x, %c", switch_flag, '0' + switch_flag);
+        //snprintf : 첫 번째 인자에 문자열을 저장할 배열을 넘기고
+        //          두 번째 인자에 저장할 배열 크기
+        //%x = 16진수 반환
 
         lcdGotoXY(0, 0);
         lcdPrint(lcdBuffer);

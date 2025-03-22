@@ -27,9 +27,9 @@ int main()
         {
             count = 0;
         }
-        else if (count > 10)
+        else if (count > 9)
         {
-            count = 10;
+            count = 9;
         }
         PORTA = numbers[count];
         _delay_ms(100);
