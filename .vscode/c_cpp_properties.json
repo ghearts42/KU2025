@@ -10,6 +10,8 @@
             "includePath": [
                 "/home/hjpubuntu22045/korea_c/src",
                 "/home/hjpubuntu22045/korea_c/lib/lcd",
+                "/home/hjpubuntu22045/korea_c/lib/sht20",
+                "/home/hjpubuntu22045/korea_c/lib/at25",
                 "/home/hjpubuntu22045/korea_c/lib/uart0",
                 "/home/hjpubuntu22045/korea_c/lib/uart1",
                 ""
@@ -19,6 +21,8 @@
                 "path": [
                     "/home/hjpubuntu22045/korea_c/src",
                     "/home/hjpubuntu22045/korea_c/lib/lcd",
+                    "/home/hjpubuntu22045/korea_c/lib/sht20",
+                    "/home/hjpubuntu22045/korea_c/lib/at25",
                     "/home/hjpubuntu22045/korea_c/lib/uart0",
                     "/home/hjpubuntu22045/korea_c/lib/uart1",
                     ""
