@@ -1,0 +1,1 @@
+savedcmd_/home/ghearts42/KU2025/raspberryPi/module/led/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/ghearts42/KU2025/raspberryPi/module/led/Module.symvers -T /home/ghearts42/KU2025/raspberryPi/module/led/modules.order -i Module.symvers -e 

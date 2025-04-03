@@ -1,0 +1,1 @@
+savedcmd_/home/ghearts42/KU2025/raspberryPi/module/switchInterrupt/modules.order := {   echo /home/ghearts42/KU2025/raspberryPi/module/switchInterrupt/switchInterrupt.o; :; } > /home/ghearts42/KU2025/raspberryPi/module/switchInterrupt/modules.order

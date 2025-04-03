@@ -1,4 +1,5 @@
-ledModule.o: /home/ghearts42/KU2025/raspberryPi/led/ledModule.c \
+export_symbol_a.o: \
+ /home/ghearts42/KU2025/raspberryPi/module/export_symbol/export_symbol_a.c \
  /usr/src/linux-headers-6.6.51+rpt-common-rpi/include/linux/compiler-version.h \
  /usr/src/linux-headers-6.6.51+rpt-common-rpi/include/linux/kconfig.h \
  include/generated/autoconf.h \
@@ -472,27 +473,4 @@ ledModule.o: /home/ghearts42/KU2025/raspberryPi/led/ledModule.c \
  /usr/src/linux-headers-6.6.51+rpt-common-rpi/include/linux/tracepoint-defs.h \
  /usr/src/linux-headers-6.6.51+rpt-common-rpi/include/linux/dynamic_debug.h \
  /usr/src/linux-headers-6.6.51+rpt-common-rpi/arch/arm64/include/asm/module.h \
- /usr/src/linux-headers-6.6.51+rpt-common-rpi/include/asm-generic/module.h \
- /usr/src/linux-headers-6.6.51+rpt-common-rpi/include/linux/gpio.h \
- /usr/src/linux-headers-6.6.51+rpt-common-rpi/include/linux/gpio/consumer.h \
- /usr/src/linux-headers-6.6.51+rpt-common-rpi/arch/arm64/include/asm/io.h \
- /usr/src/linux-headers-6.6.51+rpt-common-rpi/include/linux/pgtable.h \
- /usr/src/linux-headers-6.6.51+rpt-common-rpi/arch/arm64/include/asm/pgtable.h \
- /usr/src/linux-headers-6.6.51+rpt-common-rpi/arch/arm64/include/asm/proc-fns.h \
- /usr/src/linux-headers-6.6.51+rpt-common-rpi/arch/arm64/include/asm/pgtable-prot.h \
- /usr/src/linux-headers-6.6.51+rpt-common-rpi/arch/arm64/include/asm/tlbflush.h \
- /usr/src/linux-headers-6.6.51+rpt-common-rpi/include/linux/mmu_notifier.h \
- /usr/src/linux-headers-6.6.51+rpt-common-rpi/include/linux/mmap_lock.h \
- /usr/src/linux-headers-6.6.51+rpt-common-rpi/include/linux/interval_tree.h \
- /usr/src/linux-headers-6.6.51+rpt-common-rpi/arch/arm64/include/asm/fixmap.h \
- /usr/src/linux-headers-6.6.51+rpt-common-rpi/include/asm-generic/fixmap.h \
- /usr/src/linux-headers-6.6.51+rpt-common-rpi/include/linux/page_table_check.h \
- /usr/src/linux-headers-6.6.51+rpt-common-rpi/include/asm-generic/pgtable_uffd.h \
- arch/arm64/include/generated/asm/early_ioremap.h \
- /usr/src/linux-headers-6.6.51+rpt-common-rpi/include/asm-generic/early_ioremap.h \
- /usr/src/linux-headers-6.6.51+rpt-common-rpi/include/asm-generic/io.h \
- /usr/src/linux-headers-6.6.51+rpt-common-rpi/include/asm-generic/pci_iomap.h \
- /usr/src/linux-headers-6.6.51+rpt-common-rpi/include/linux/logic_pio.h \
- /usr/src/linux-headers-6.6.51+rpt-common-rpi/include/linux/fwnode.h \
- /usr/src/linux-headers-6.6.51+rpt-common-rpi/include/linux/vmalloc.h \
- /usr/src/linux-headers-6.6.51+rpt-common-rpi/arch/arm64/include/asm/vmalloc.h
+ /usr/src/linux-headers-6.6.51+rpt-common-rpi/include/asm-generic/module.h

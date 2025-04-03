@@ -1,0 +1,1 @@
+savedcmd_/home/ghearts42/KU2025/raspberryPi/module/switch_driver/switch_driver.mod := printf '%s\n'   switch_driver.o | awk '!x[$$0]++ { print("/home/ghearts42/KU2025/raspberryPi/module/switch_driver/"$$0) }' > /home/ghearts42/KU2025/raspberryPi/module/switch_driver/switch_driver.mod
