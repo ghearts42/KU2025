@@ -86,3 +86,8 @@ KU Sejong C class
 
   - 배열(Array) 연속된 같은 Type의 자료, 같은 형태의 많은 양의 데이터를 반복문으로 처리하기 위해 메모리에 연속적으로 저장하고 쪼개어 사용함.
     자료형 변수명[요소 개수] ex) int ary[5]; < int형의 요소가 5개인 배열 ary의 선언
+
+  ## 2025-04-04
+
+  - RaspberryPi 4B Documentation 확인
+  - gpio헤더 없이 gpio에 접근하는 gpio

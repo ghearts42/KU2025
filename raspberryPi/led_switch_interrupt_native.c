@@ -18,14 +18,13 @@ int main(void)
     for (int i = 0; i < 4; ++i)
     {
         read(fd, &buf, 4);
-        write(fd, &buf, 4);
         printf("sw1: %d, sw2: %d, sw3: %d, sw4: %d\n", buf[0], buf[1], buf[2], buf[3]);
         sleep(1);
     }
     for (int i = 0; i < 4; ++i)
     {
         buf[i] = 1;
-
+        write(fd, &buf, 4);
         sleep(1);
     }
     close(fd);
