@@ -91,3 +91,8 @@ KU Sejong C class
 
   - RaspberryPi 4B Documentation 확인
   - gpio헤더 없이 gpio에 접근하는 gpio
+
+  ## 2025-04-07
+
+  - Bash 스크립팅 :
+  - 스크립트 파일 생성 및 실행 방법

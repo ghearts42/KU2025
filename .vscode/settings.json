@@ -5,7 +5,8 @@
     "mysql.h": "c",
     "bowling.h": "c",
     "uart0.h": "c",
-    "stdio.h": "c"
+    "stdio.h": "c",
+    "interrupt.h": "c"
   },
   "cmake.sourceDirectory": "/home/hjpubuntu22045/korea_c/c_example/PersonalTest/bowling"
 }
