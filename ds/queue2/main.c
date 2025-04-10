@@ -4,7 +4,7 @@
 int main(void)
 {
 	push(100);
-	push(200);	
+	push(200);
 	printf("1st pop() : %d\n", pop());
 
 	push(300);
@@ -14,4 +14,3 @@ int main(void)
 
 	return 0;
 }
-
