@@ -1,14 +1,14 @@
 #include "list.h"
 
-void initList(List *pList, int eleSize) // 초기화
+List::List(int eleSize) // 초기화
 {
-    pList->ptr = malloc(sizeof(Node) /*+ eleSize*/);
-    // pList->ptr->data =
-    pList->ptr->next = NULL;
-    pList->eleSize = eleSize;
+    //pList->ptr = malloc(sizeof(Node) /*+ eleSize*/);
+    this->ptr = new int[eleSize];
+    this->ptr->next = NULL;
+    this->eleSize = eleSize;
 }
 
-void cleanupList(List *pList) // malloc free
+List::~List() // malloc free
 {
     Node *p = pList->ptr;
     while (p)
@@ -19,7 +19,7 @@ void cleanupList(List *pList) // malloc free
     }
 }
 
-void insertFirstNode(List *pList, const void *pData)
+void insertFirstNode(const void *pData)
 {
     Node *p = malloc(sizeof(Node) + pList->eleSize);
     // // p->data = data;
@@ -29,7 +29,7 @@ void insertFirstNode(List *pList, const void *pData)
     pList->ptr->next = p;
 }
 
-void insertNode(List *pList, const void *prevData, const void *pData)
+void insertNode(const void *prevData, const void *pData)
 {
     Node *p = pList->ptr->next;
     while (p)
@@ -51,7 +51,7 @@ void insertNode(List *pList, const void *prevData, const void *pData)
     }
 }
 
-void deleteNode(List *pList, const void *pData)
+void deleteNode(const void *pData)
 {
     Node *p = pList->ptr->next;
     Node *p2 = pList->ptr;

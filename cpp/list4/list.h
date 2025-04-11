@@ -1,26 +1,29 @@
 #pragma once
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include <cstdio>
+// #include <stdlib.h>
+// #include <string.h>
 
 class Node
 {
+private:
     // // int data;
     struct node *next;
 };
 
 class List
 {
+private:
     Node *ptr;
     int eleSize;
+    
+public:
+    List(int eleSize);
+    ~List();
+    
+    void insertFirstNode(const void *pData);
+    void insertNode(const void *prevData, const void *pData);
+    void deleteNode(const void *pData);
+    
+    void printList(const List *pList, void (*print)(const void *));
 };
-
-void initList(List *pList, int eleSize);
-void cleanupList(List *pList);
-
-void insertFirstNode(List *pList, const void *pData);
-void insertNode(List *pList, const void *prevData, const void *pData);
-void deleteNode(List *pList, const void *pData);
-
-void printList(const List *pList, void (*print)(const void *));

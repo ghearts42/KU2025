@@ -1,22 +1,39 @@
 #include "list.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 void initList(List *pList, int eleSize) // 초기화
 {
     pList->ptr = malloc(sizeof(Node) /*+ eleSize*/);
     // pList->ptr->data =
-    pList->ptr->next = NULL;
     pList->eleSize = eleSize;
+
+    pList->ptr->next = NULL;
 }
 
 void cleanupList(List *pList) // malloc free
 {
-    Node *p = pList->ptr;
-    while (p)
+    Node *ptr = pList->ptr;
+    while (ptr)
     {
-        Node *tmp = p;
-        p = p->next;
+        Node *tmp = ptr;
+        ptr = ptr->next;
         free(tmp);
     }
+}
+
+void printList(const List *pList, void (*print)(const void *))
+{
+    Node *p = pList->ptr->next;
+    printf("[");
+    while (p)
+    {
+        print(p + 1);
+        printf((p->next) ? ", " : "");
+        p = p->next;
+    }
+    printf("]\n");
 }
 
 void insertFirstNode(List *pList, const void *pData)
@@ -53,33 +70,22 @@ void insertNode(List *pList, const void *prevData, const void *pData)
 
 void deleteNode(List *pList, const void *pData)
 {
-    Node *p = pList->ptr->next;
-    Node *p2 = pList->ptr;
-    while (p)
-    {
-        if (memcmp(p + 1, pData, pList->eleSize) == 0)
-        {
-            break;
-        }
-    }
-    p = p->next;
-    p2 = p2->next;
-    if (p)
-    {
-        p2->next = p->next;
-        free(p);
-    }
-}
+    Node *ptr = pList->ptr->next;
+    Node *ptr2 = pList->ptr;
 
-void printList(const List *pList, void (*print)(const void *))
-{
-    Node *p = pList->ptr->next;
-    printf("[");
-    while (p)
+    while (ptr)
     {
-        print(p + 1);
-        printf((p->next) ? ", " : "");
-        p = p->next;
+        // if (ptr->data == data)
+        if (memcmp(ptr + 1, pData, pList->eleSize) == 0)
+            break;
+
+        ptr = ptr->next;
+        ptr2 = ptr2->next;
     }
-    printf("]\n");
+
+    if (ptr)
+    {
+        ptr2->next = ptr->next;
+        free(ptr);
+    }
 }
