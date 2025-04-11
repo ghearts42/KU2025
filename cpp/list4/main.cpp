@@ -14,7 +14,7 @@ int main(void)
 {
     List list1, list2;
     initList(&list1, sizeof(int));
-    initList(&list1, sizeof(double));
+    initList(&list2, sizeof(double));
 
     int i = 4;
     insertFirstNode(&list1, &i); //[4]

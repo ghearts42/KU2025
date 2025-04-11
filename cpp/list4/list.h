@@ -8,7 +8,7 @@ class Node
 {
 private:
     // // int data;
-    struct node *next;
+    Node *next;
 };
 
 class List
