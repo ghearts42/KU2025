@@ -9,7 +9,10 @@
     "interrupt.h": "c",
     "array": "c",
     "string": "c",
-    "string_view": "c"
+    "string_view": "c",
+    "cstdio": "cpp",
+    "iostream": "cpp",
+    "ostream": "cpp"
   },
   "cmake.sourceDirectory": "/home/hjpubuntu22045/korea_c/c_example/PersonalTest/bowling"
 }
