@@ -2,7 +2,7 @@
 #include <iostream>
 #include "queue.h"
 
-int main(void)
+int main()
 {
 	Queue q1(10), q2(100);
 

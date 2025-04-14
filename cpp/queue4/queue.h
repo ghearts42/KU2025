@@ -12,9 +12,9 @@ private:	//int array[QUEUESIZE];
 
 public:	
 	// void initQueue(Queue *pq, int size);
-	Queue(int size);
+	Queue(int size);	//constructor
 	// void cleanupQueue(Queue *pq);
-	~Queue();
+	~Queue();			//destructor
 
 	void push(int data);
 	int pop();

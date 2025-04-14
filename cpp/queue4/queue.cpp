@@ -9,7 +9,8 @@ Queue::Queue(int size)
 	assert(this->pArr);
 
 	this->size = size;
-	this->front = this->rear = 0;
+	this->front = 0;
+	this->rear = 0;
 }
 
 Queue::~Queue()
