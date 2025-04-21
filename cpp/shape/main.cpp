@@ -8,11 +8,13 @@ void printShape(const Shape *ps)
 {
     if (typeid(*ps) == typeid(Rectangle)) // RTTI(RunTime Type Identification)
     {
-        const Rectangle *pr = (const Rectangle *)ps;
+        // const Rectangle *pr = (const Rectangle *)ps;
+        const Rectangle *pr = dynamic_cast<const Rectangle *>(ps);
         std::cout << "rectangle diagonal" << pr->getDiagonal() << " ";
     }else if (typeid(*ps) == typeid(Circle))
     {
-        const Circle *pc = (const Circle *)ps;
+        // const Circle *pc = (const Circle *)ps;
+        const Circle *pc = dynamic_cast<const Circle *>(ps);
         std::cout << "circle Circumstances : " << pc->getCircumstance() << " ";
     }
     std::cout << "area " << ps->area() << std::endl;
