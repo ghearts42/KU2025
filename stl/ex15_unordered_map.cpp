@@ -1,6 +1,6 @@
 //표준 입력을 받아서
 //단어 별 등장 횟수를 출력하는 프로그램
-
+// unordered map은 해쉬 테이블을 가지고 있어 빠른 접근을 가능하게 한다.
 #include <iostream>
 #include <sstream>
 #include <unordered_map>
