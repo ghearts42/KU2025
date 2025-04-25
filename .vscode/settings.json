@@ -46,7 +46,8 @@
     "typeinfo": "cpp",
     "utility": "cpp",
     "algorithm": "cpp",
-    "chrono": "cpp"
+    "chrono": "cpp",
+    "future": "cpp"
   },
   "cmake.sourceDirectory": "/home/hjpubuntu22045/korea_c"
 }
