@@ -27,9 +27,10 @@ int main(int argc, char *argv[])
     serv_sock = socket(PF_INET, SOCK_STREAM, 0); // TCP 설정
     // socket(IPv4 프로토콜, TCP, 0(기본 프로토콜))
 
-    memset(&serv_addr, 0, sizeof(serv_addr));      // 구조체 초기화
-    serv_addr.sin_family = AF_INET;                // IPv4 사용
-    serv_addr.sin_addr.s_addr = htonl(INADDR_ANY); // INADDR_ANY > 어떤 IP 주소든 받아옴
+    memset(&serv_addr, 0, sizeof(serv_addr)); // 구조체 초기화
+    serv_addr.sin_family = AF_INET;           // IPv4 사용
+    // serv_addr.sin_addr.s_addr = htonl(INADDR_ANY); // INADDR_ANY > 어떤 IP 주소든 받아옴
+    serv_addr.sin_addr.s_addr = inet_addr("0.0.0.0");
     serv_addr.sin_port = htons(atoi(argv[1]));
 
     int option = 1;
