@@ -47,7 +47,8 @@
     "utility": "cpp",
     "algorithm": "cpp",
     "chrono": "cpp",
-    "future": "cpp"
+    "future": "cpp",
+    "unistd.h": "c"
   },
   "cmake.sourceDirectory": "/home/hjpubuntu22045/korea_c"
 }
