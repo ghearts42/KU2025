@@ -1,1 +1,6 @@
 build/
+.mypy_cache/
+*.ko
+*.o
+*.mod.*
+.*.cmd
