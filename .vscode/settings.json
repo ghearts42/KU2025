@@ -50,5 +50,9 @@
     "future": "cpp",
     "unistd.h": "c"
   },
-  "cmake.sourceDirectory": "/home/hjpubuntu22045/korea_c"
+  "cmake.sourceDirectory": "/home/hjpubuntu22045/korea_c",
+  "docker.dockerPath": "/usr/bin/docker",
+  "docker.environment": {
+    "DOCKER_HOST": "unix:///var/run/docker.sock"
+  }
 }
