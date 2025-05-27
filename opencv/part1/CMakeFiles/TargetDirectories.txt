@@ -1,0 +1,10 @@
+/home/hjpubuntu22045/korea_c/opencv/part1/CMakeFiles/01_helloWorld.dir
+/home/hjpubuntu22045/korea_c/opencv/part1/CMakeFiles/02_basicOp.dir
+/home/hjpubuntu22045/korea_c/opencv/part1/CMakeFiles/03_matOp.dir
+/home/hjpubuntu22045/korea_c/opencv/part1/CMakeFiles/04_inputArray.dir
+/home/hjpubuntu22045/korea_c/opencv/part1/CMakeFiles/05_matOp2.dir
+/home/hjpubuntu22045/korea_c/opencv/part1/CMakeFiles/06_matOp3.dir
+/home/hjpubuntu22045/korea_c/opencv/part1/CMakeFiles/07_vectorScalar.dir
+/home/hjpubuntu22045/korea_c/opencv/part1/CMakeFiles/08_video.dir
+/home/hjpubuntu22045/korea_c/opencv/part1/CMakeFiles/edit_cache.dir
+/home/hjpubuntu22045/korea_c/opencv/part1/CMakeFiles/rebuild_cache.dir
