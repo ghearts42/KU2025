@@ -220,6 +220,19 @@ depend:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/08_video.dir/build.make CMakeFiles/08_video.dir/build
 .PHONY : 08_video/fast
 
+#=============================================================================
+# Target rules for targets named 09_videoSave
+
+# Build rule for target.
+09_videoSave: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 09_videoSave
+.PHONY : 09_videoSave
+
+# fast build rule for target.
+09_videoSave/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/09_videoSave.dir/build.make CMakeFiles/09_videoSave.dir/build
+.PHONY : 09_videoSave/fast
+
 01_helloWorld.o: 01_helloWorld.cpp.o
 .PHONY : 01_helloWorld.o
 
@@ -412,6 +425,30 @@ depend:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/08_video.dir/build.make CMakeFiles/08_video.dir/08_video.cpp.s
 .PHONY : 08_video.cpp.s
 
+09_videoSave.o: 09_videoSave.cpp.o
+.PHONY : 09_videoSave.o
+
+# target to build an object file
+09_videoSave.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/09_videoSave.dir/build.make CMakeFiles/09_videoSave.dir/09_videoSave.cpp.o
+.PHONY : 09_videoSave.cpp.o
+
+09_videoSave.i: 09_videoSave.cpp.i
+.PHONY : 09_videoSave.i
+
+# target to preprocess a source file
+09_videoSave.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/09_videoSave.dir/build.make CMakeFiles/09_videoSave.dir/09_videoSave.cpp.i
+.PHONY : 09_videoSave.cpp.i
+
+09_videoSave.s: 09_videoSave.cpp.s
+.PHONY : 09_videoSave.s
+
+# target to generate assembly for a file
+09_videoSave.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/09_videoSave.dir/build.make CMakeFiles/09_videoSave.dir/09_videoSave.cpp.s
+.PHONY : 09_videoSave.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -428,6 +465,7 @@ help:
 	@echo "... 06_matOp3"
 	@echo "... 07_vectorScalar"
 	@echo "... 08_video"
+	@echo "... 09_videoSave"
 	@echo "... 01_helloWorld.o"
 	@echo "... 01_helloWorld.i"
 	@echo "... 01_helloWorld.s"
@@ -452,6 +490,9 @@ help:
 	@echo "... 08_video.o"
 	@echo "... 08_video.i"
 	@echo "... 08_video.s"
+	@echo "... 09_videoSave.o"
+	@echo "... 09_videoSave.i"
+	@echo "... 09_videoSave.s"
 .PHONY : help
 
 

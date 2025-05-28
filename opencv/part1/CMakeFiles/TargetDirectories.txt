@@ -6,5 +6,6 @@
 /home/hjpubuntu22045/korea_c/opencv/part1/CMakeFiles/06_matOp3.dir
 /home/hjpubuntu22045/korea_c/opencv/part1/CMakeFiles/07_vectorScalar.dir
 /home/hjpubuntu22045/korea_c/opencv/part1/CMakeFiles/08_video.dir
+/home/hjpubuntu22045/korea_c/opencv/part1/CMakeFiles/09_videoSave.dir
 /home/hjpubuntu22045/korea_c/opencv/part1/CMakeFiles/edit_cache.dir
 /home/hjpubuntu22045/korea_c/opencv/part1/CMakeFiles/rebuild_cache.dir
