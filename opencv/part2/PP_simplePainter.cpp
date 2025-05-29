@@ -6,6 +6,7 @@ using namespace std;
 using namespace cv;
 
 String folderPath = "/home/hjpubuntu22045/korea_c/opencv/data/";
+
 void on_mouse(int event, int x, int y, int flags, void *data);
 
 int main()
@@ -36,6 +37,11 @@ void on_mouse(int event, int x, int y, int flags, void *data)
     static Point ptOld;
     static bool pushed;
     static bool erased;
+    int pos1, pos2, pos3;
+    int b = 0;
+    int g = 0;
+    int r = 0;
+    cv::Scalar paintColor = cv::Scalar(b,g,r);
     Mat *img = (Mat *)data;
     switch (event)
     {

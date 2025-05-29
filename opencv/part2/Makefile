@@ -195,6 +195,32 @@ depend:
 .PHONY : 15_trackbar/fast
 
 #=============================================================================
+# Target rules for targets named 16_filestorage
+
+# Build rule for target.
+16_filestorage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 16_filestorage
+.PHONY : 16_filestorage
+
+# fast build rule for target.
+16_filestorage/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/16_filestorage.dir/build.make CMakeFiles/16_filestorage.dir/build
+.PHONY : 16_filestorage/fast
+
+#=============================================================================
+# Target rules for targets named 17_filestorage2
+
+# Build rule for target.
+17_filestorage2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 17_filestorage2
+.PHONY : 17_filestorage2
+
+# fast build rule for target.
+17_filestorage2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/17_filestorage2.dir/build.make CMakeFiles/17_filestorage2.dir/build
+.PHONY : 17_filestorage2/fast
+
+#=============================================================================
 # Target rules for targets named 18_camtest
 
 # Build rule for target.
@@ -221,6 +247,32 @@ depend:
 .PHONY : 19_draw_rect_mouse/fast
 
 #=============================================================================
+# Target rules for targets named 20_mask
+
+# Build rule for target.
+20_mask: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 20_mask
+.PHONY : 20_mask
+
+# fast build rule for target.
+20_mask/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/20_mask.dir/build.make CMakeFiles/20_mask.dir/build
+.PHONY : 20_mask/fast
+
+#=============================================================================
+# Target rules for targets named 21_tickmeter
+
+# Build rule for target.
+21_tickmeter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 21_tickmeter
+.PHONY : 21_tickmeter
+
+# fast build rule for target.
+21_tickmeter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/21_tickmeter.dir/build.make CMakeFiles/21_tickmeter.dir/build
+.PHONY : 21_tickmeter/fast
+
+#=============================================================================
 # Target rules for targets named PP_simplePainter
 
 # Build rule for target.
@@ -232,6 +284,19 @@ PP_simplePainter: cmake_check_build_system
 PP_simplePainter/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PP_simplePainter.dir/build.make CMakeFiles/PP_simplePainter.dir/build
 .PHONY : PP_simplePainter/fast
+
+#=============================================================================
+# Target rules for targets named array
+
+# Build rule for target.
+array: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 array
+.PHONY : array
+
+# fast build rule for target.
+array/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/build
+.PHONY : array/fast
 
 0_drawning.o: 0_drawning.cpp.o
 .PHONY : 0_drawning.o
@@ -377,6 +442,54 @@ PP_simplePainter/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/15_trackbar.dir/build.make CMakeFiles/15_trackbar.dir/15_trackbar.cpp.s
 .PHONY : 15_trackbar.cpp.s
 
+16_filestorage.o: 16_filestorage.cpp.o
+.PHONY : 16_filestorage.o
+
+# target to build an object file
+16_filestorage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/16_filestorage.dir/build.make CMakeFiles/16_filestorage.dir/16_filestorage.cpp.o
+.PHONY : 16_filestorage.cpp.o
+
+16_filestorage.i: 16_filestorage.cpp.i
+.PHONY : 16_filestorage.i
+
+# target to preprocess a source file
+16_filestorage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/16_filestorage.dir/build.make CMakeFiles/16_filestorage.dir/16_filestorage.cpp.i
+.PHONY : 16_filestorage.cpp.i
+
+16_filestorage.s: 16_filestorage.cpp.s
+.PHONY : 16_filestorage.s
+
+# target to generate assembly for a file
+16_filestorage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/16_filestorage.dir/build.make CMakeFiles/16_filestorage.dir/16_filestorage.cpp.s
+.PHONY : 16_filestorage.cpp.s
+
+17_filestorage2.o: 17_filestorage2.cpp.o
+.PHONY : 17_filestorage2.o
+
+# target to build an object file
+17_filestorage2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/17_filestorage2.dir/build.make CMakeFiles/17_filestorage2.dir/17_filestorage2.cpp.o
+.PHONY : 17_filestorage2.cpp.o
+
+17_filestorage2.i: 17_filestorage2.cpp.i
+.PHONY : 17_filestorage2.i
+
+# target to preprocess a source file
+17_filestorage2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/17_filestorage2.dir/build.make CMakeFiles/17_filestorage2.dir/17_filestorage2.cpp.i
+.PHONY : 17_filestorage2.cpp.i
+
+17_filestorage2.s: 17_filestorage2.cpp.s
+.PHONY : 17_filestorage2.s
+
+# target to generate assembly for a file
+17_filestorage2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/17_filestorage2.dir/build.make CMakeFiles/17_filestorage2.dir/17_filestorage2.cpp.s
+.PHONY : 17_filestorage2.cpp.s
+
 18_camtest.o: 18_camtest.cpp.o
 .PHONY : 18_camtest.o
 
@@ -425,6 +538,54 @@ PP_simplePainter/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/19_draw_rect_mouse.dir/build.make CMakeFiles/19_draw_rect_mouse.dir/19_draw_rect_mouse.cpp.s
 .PHONY : 19_draw_rect_mouse.cpp.s
 
+20_mask.o: 20_mask.cpp.o
+.PHONY : 20_mask.o
+
+# target to build an object file
+20_mask.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/20_mask.dir/build.make CMakeFiles/20_mask.dir/20_mask.cpp.o
+.PHONY : 20_mask.cpp.o
+
+20_mask.i: 20_mask.cpp.i
+.PHONY : 20_mask.i
+
+# target to preprocess a source file
+20_mask.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/20_mask.dir/build.make CMakeFiles/20_mask.dir/20_mask.cpp.i
+.PHONY : 20_mask.cpp.i
+
+20_mask.s: 20_mask.cpp.s
+.PHONY : 20_mask.s
+
+# target to generate assembly for a file
+20_mask.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/20_mask.dir/build.make CMakeFiles/20_mask.dir/20_mask.cpp.s
+.PHONY : 20_mask.cpp.s
+
+21_tickmeter.o: 21_tickmeter.cpp.o
+.PHONY : 21_tickmeter.o
+
+# target to build an object file
+21_tickmeter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/21_tickmeter.dir/build.make CMakeFiles/21_tickmeter.dir/21_tickmeter.cpp.o
+.PHONY : 21_tickmeter.cpp.o
+
+21_tickmeter.i: 21_tickmeter.cpp.i
+.PHONY : 21_tickmeter.i
+
+# target to preprocess a source file
+21_tickmeter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/21_tickmeter.dir/build.make CMakeFiles/21_tickmeter.dir/21_tickmeter.cpp.i
+.PHONY : 21_tickmeter.cpp.i
+
+21_tickmeter.s: 21_tickmeter.cpp.s
+.PHONY : 21_tickmeter.s
+
+# target to generate assembly for a file
+21_tickmeter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/21_tickmeter.dir/build.make CMakeFiles/21_tickmeter.dir/21_tickmeter.cpp.s
+.PHONY : 21_tickmeter.cpp.s
+
 PP_simplePainter.o: PP_simplePainter.cpp.o
 .PHONY : PP_simplePainter.o
 
@@ -449,6 +610,30 @@ PP_simplePainter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PP_simplePainter.dir/build.make CMakeFiles/PP_simplePainter.dir/PP_simplePainter.cpp.s
 .PHONY : PP_simplePainter.cpp.s
 
+array.o: array.cpp.o
+.PHONY : array.o
+
+# target to build an object file
+array.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/array.cpp.o
+.PHONY : array.cpp.o
+
+array.i: array.cpp.i
+.PHONY : array.i
+
+# target to preprocess a source file
+array.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/array.cpp.i
+.PHONY : array.cpp.i
+
+array.s: array.cpp.s
+.PHONY : array.s
+
+# target to generate assembly for a file
+array.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/array.cpp.s
+.PHONY : array.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -463,9 +648,14 @@ help:
 	@echo "... 13_keyboard"
 	@echo "... 14_mousecallback"
 	@echo "... 15_trackbar"
+	@echo "... 16_filestorage"
+	@echo "... 17_filestorage2"
 	@echo "... 18_camtest"
 	@echo "... 19_draw_rect_mouse"
+	@echo "... 20_mask"
+	@echo "... 21_tickmeter"
 	@echo "... PP_simplePainter"
+	@echo "... array"
 	@echo "... 0_drawning.o"
 	@echo "... 0_drawning.i"
 	@echo "... 0_drawning.s"
@@ -484,15 +674,30 @@ help:
 	@echo "... 15_trackbar.o"
 	@echo "... 15_trackbar.i"
 	@echo "... 15_trackbar.s"
+	@echo "... 16_filestorage.o"
+	@echo "... 16_filestorage.i"
+	@echo "... 16_filestorage.s"
+	@echo "... 17_filestorage2.o"
+	@echo "... 17_filestorage2.i"
+	@echo "... 17_filestorage2.s"
 	@echo "... 18_camtest.o"
 	@echo "... 18_camtest.i"
 	@echo "... 18_camtest.s"
 	@echo "... 19_draw_rect_mouse.o"
 	@echo "... 19_draw_rect_mouse.i"
 	@echo "... 19_draw_rect_mouse.s"
+	@echo "... 20_mask.o"
+	@echo "... 20_mask.i"
+	@echo "... 20_mask.s"
+	@echo "... 21_tickmeter.o"
+	@echo "... 21_tickmeter.i"
+	@echo "... 21_tickmeter.s"
 	@echo "... PP_simplePainter.o"
 	@echo "... PP_simplePainter.i"
 	@echo "... PP_simplePainter.s"
+	@echo "... array.o"
+	@echo "... array.i"
+	@echo "... array.s"
 .PHONY : help
 
 

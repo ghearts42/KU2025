@@ -1,0 +1,4 @@
+/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles/29_affine.dir
+/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles/30_perspective.dir
+/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles/edit_cache.dir
+/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles/rebuild_cache.dir

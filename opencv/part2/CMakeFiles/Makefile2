@@ -69,9 +69,14 @@ all: CMakeFiles/12_freetypeFont.dir/all
 all: CMakeFiles/13_keyboard.dir/all
 all: CMakeFiles/14_mousecallback.dir/all
 all: CMakeFiles/15_trackbar.dir/all
+all: CMakeFiles/16_filestorage.dir/all
+all: CMakeFiles/17_filestorage2.dir/all
 all: CMakeFiles/18_camtest.dir/all
 all: CMakeFiles/19_draw_rect_mouse.dir/all
+all: CMakeFiles/20_mask.dir/all
+all: CMakeFiles/21_tickmeter.dir/all
 all: CMakeFiles/PP_simplePainter.dir/all
+all: CMakeFiles/array.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -85,9 +90,14 @@ clean: CMakeFiles/12_freetypeFont.dir/clean
 clean: CMakeFiles/13_keyboard.dir/clean
 clean: CMakeFiles/14_mousecallback.dir/clean
 clean: CMakeFiles/15_trackbar.dir/clean
+clean: CMakeFiles/16_filestorage.dir/clean
+clean: CMakeFiles/17_filestorage2.dir/clean
 clean: CMakeFiles/18_camtest.dir/clean
 clean: CMakeFiles/19_draw_rect_mouse.dir/clean
+clean: CMakeFiles/20_mask.dir/clean
+clean: CMakeFiles/21_tickmeter.dir/clean
 clean: CMakeFiles/PP_simplePainter.dir/clean
+clean: CMakeFiles/array.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -247,13 +257,65 @@ CMakeFiles/15_trackbar.dir/clean:
 .PHONY : CMakeFiles/15_trackbar.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/16_filestorage.dir
+
+# All Build rule for target.
+CMakeFiles/16_filestorage.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/16_filestorage.dir/build.make CMakeFiles/16_filestorage.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/16_filestorage.dir/build.make CMakeFiles/16_filestorage.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles --progress-num=13,14 "Built target 16_filestorage"
+.PHONY : CMakeFiles/16_filestorage.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/16_filestorage.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/16_filestorage.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles 0
+.PHONY : CMakeFiles/16_filestorage.dir/rule
+
+# Convenience name for target.
+16_filestorage: CMakeFiles/16_filestorage.dir/rule
+.PHONY : 16_filestorage
+
+# clean rule for target.
+CMakeFiles/16_filestorage.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/16_filestorage.dir/build.make CMakeFiles/16_filestorage.dir/clean
+.PHONY : CMakeFiles/16_filestorage.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/17_filestorage2.dir
+
+# All Build rule for target.
+CMakeFiles/17_filestorage2.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/17_filestorage2.dir/build.make CMakeFiles/17_filestorage2.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/17_filestorage2.dir/build.make CMakeFiles/17_filestorage2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles --progress-num=15,16 "Built target 17_filestorage2"
+.PHONY : CMakeFiles/17_filestorage2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/17_filestorage2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/17_filestorage2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles 0
+.PHONY : CMakeFiles/17_filestorage2.dir/rule
+
+# Convenience name for target.
+17_filestorage2: CMakeFiles/17_filestorage2.dir/rule
+.PHONY : 17_filestorage2
+
+# clean rule for target.
+CMakeFiles/17_filestorage2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/17_filestorage2.dir/build.make CMakeFiles/17_filestorage2.dir/clean
+.PHONY : CMakeFiles/17_filestorage2.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/18_camtest.dir
 
 # All Build rule for target.
 CMakeFiles/18_camtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/18_camtest.dir/build.make CMakeFiles/18_camtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/18_camtest.dir/build.make CMakeFiles/18_camtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles --progress-num=13,14 "Built target 18_camtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles --progress-num=17,18 "Built target 18_camtest"
 .PHONY : CMakeFiles/18_camtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -279,7 +341,7 @@ CMakeFiles/18_camtest.dir/clean:
 CMakeFiles/19_draw_rect_mouse.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/19_draw_rect_mouse.dir/build.make CMakeFiles/19_draw_rect_mouse.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/19_draw_rect_mouse.dir/build.make CMakeFiles/19_draw_rect_mouse.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles --progress-num=15,16 "Built target 19_draw_rect_mouse"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles --progress-num=19,20 "Built target 19_draw_rect_mouse"
 .PHONY : CMakeFiles/19_draw_rect_mouse.dir/all
 
 # Build rule for subdir invocation for target.
@@ -299,13 +361,65 @@ CMakeFiles/19_draw_rect_mouse.dir/clean:
 .PHONY : CMakeFiles/19_draw_rect_mouse.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/20_mask.dir
+
+# All Build rule for target.
+CMakeFiles/20_mask.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/20_mask.dir/build.make CMakeFiles/20_mask.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/20_mask.dir/build.make CMakeFiles/20_mask.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles --progress-num=21,22 "Built target 20_mask"
+.PHONY : CMakeFiles/20_mask.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/20_mask.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/20_mask.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles 0
+.PHONY : CMakeFiles/20_mask.dir/rule
+
+# Convenience name for target.
+20_mask: CMakeFiles/20_mask.dir/rule
+.PHONY : 20_mask
+
+# clean rule for target.
+CMakeFiles/20_mask.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/20_mask.dir/build.make CMakeFiles/20_mask.dir/clean
+.PHONY : CMakeFiles/20_mask.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/21_tickmeter.dir
+
+# All Build rule for target.
+CMakeFiles/21_tickmeter.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/21_tickmeter.dir/build.make CMakeFiles/21_tickmeter.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/21_tickmeter.dir/build.make CMakeFiles/21_tickmeter.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles --progress-num=23,24 "Built target 21_tickmeter"
+.PHONY : CMakeFiles/21_tickmeter.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/21_tickmeter.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/21_tickmeter.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles 0
+.PHONY : CMakeFiles/21_tickmeter.dir/rule
+
+# Convenience name for target.
+21_tickmeter: CMakeFiles/21_tickmeter.dir/rule
+.PHONY : 21_tickmeter
+
+# clean rule for target.
+CMakeFiles/21_tickmeter.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/21_tickmeter.dir/build.make CMakeFiles/21_tickmeter.dir/clean
+.PHONY : CMakeFiles/21_tickmeter.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/PP_simplePainter.dir
 
 # All Build rule for target.
 CMakeFiles/PP_simplePainter.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PP_simplePainter.dir/build.make CMakeFiles/PP_simplePainter.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PP_simplePainter.dir/build.make CMakeFiles/PP_simplePainter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles --progress-num=17,18 "Built target PP_simplePainter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles --progress-num=25,26 "Built target PP_simplePainter"
 .PHONY : CMakeFiles/PP_simplePainter.dir/all
 
 # Build rule for subdir invocation for target.
@@ -323,6 +437,32 @@ PP_simplePainter: CMakeFiles/PP_simplePainter.dir/rule
 CMakeFiles/PP_simplePainter.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PP_simplePainter.dir/build.make CMakeFiles/PP_simplePainter.dir/clean
 .PHONY : CMakeFiles/PP_simplePainter.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/array.dir
+
+# All Build rule for target.
+CMakeFiles/array.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles --progress-num=27,28 "Built target array"
+.PHONY : CMakeFiles/array.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/array.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/array.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles 0
+.PHONY : CMakeFiles/array.dir/rule
+
+# Convenience name for target.
+array: CMakeFiles/array.dir/rule
+.PHONY : array
+
+# clean rule for target.
+CMakeFiles/array.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/clean
+.PHONY : CMakeFiles/array.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

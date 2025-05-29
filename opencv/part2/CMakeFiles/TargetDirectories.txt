@@ -4,8 +4,13 @@
 /home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles/13_keyboard.dir
 /home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles/14_mousecallback.dir
 /home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles/15_trackbar.dir
+/home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles/16_filestorage.dir
+/home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles/17_filestorage2.dir
 /home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles/18_camtest.dir
 /home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles/19_draw_rect_mouse.dir
+/home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles/20_mask.dir
+/home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles/21_tickmeter.dir
 /home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles/PP_simplePainter.dir
+/home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles/array.dir
 /home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles/edit_cache.dir
 /home/hjpubuntu22045/korea_c/opencv/part2/CMakeFiles/rebuild_cache.dir

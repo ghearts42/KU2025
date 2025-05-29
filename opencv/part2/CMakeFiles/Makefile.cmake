@@ -55,7 +55,12 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/13_keyboard.dir/DependInfo.cmake"
   "CMakeFiles/14_mousecallback.dir/DependInfo.cmake"
   "CMakeFiles/15_trackbar.dir/DependInfo.cmake"
+  "CMakeFiles/16_filestorage.dir/DependInfo.cmake"
+  "CMakeFiles/17_filestorage2.dir/DependInfo.cmake"
   "CMakeFiles/18_camtest.dir/DependInfo.cmake"
   "CMakeFiles/19_draw_rect_mouse.dir/DependInfo.cmake"
+  "CMakeFiles/20_mask.dir/DependInfo.cmake"
+  "CMakeFiles/21_tickmeter.dir/DependInfo.cmake"
   "CMakeFiles/PP_simplePainter.dir/DependInfo.cmake"
+  "CMakeFiles/array.dir/DependInfo.cmake"
   )
