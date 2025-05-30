@@ -51,4 +51,17 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/29_affine.dir/DependInfo.cmake"
   "CMakeFiles/30_perspective.dir/DependInfo.cmake"
+  "CMakeFiles/30_perspectivePic.dir/DependInfo.cmake"
+  "CMakeFiles/31_sobel.dir/DependInfo.cmake"
+  "CMakeFiles/32_canny.dir/DependInfo.cmake"
+  "CMakeFiles/33_houghline.dir/DependInfo.cmake"
+  "CMakeFiles/33_houghlineP.dir/DependInfo.cmake"
+  "CMakeFiles/34_houghCircle.dir/DependInfo.cmake"
+  "CMakeFiles/35_color_split.dir/DependInfo.cmake"
+  "CMakeFiles/35_color_split_2.dir/DependInfo.cmake"
+  "CMakeFiles/36_inrange.dir/DependInfo.cmake"
+  "CMakeFiles/37_threshold.dir/DependInfo.cmake"
+  "CMakeFiles/38_morphology.dir/DependInfo.cmake"
+  "CMakeFiles/39_.dir/DependInfo.cmake"
+  "CMakeFiles/40_.dir/DependInfo.cmake"
   )

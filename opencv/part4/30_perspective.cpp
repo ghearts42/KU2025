@@ -9,55 +9,75 @@
 using namespace std;
 using namespace cv;
 
+typedef struct
+{
+    Point2f srcPts[4];
+    Point2f dstPts[4];
+    Mat frame;
+    Mat dst;
+} Mydata;
+
 String folderPath = "/home/hjpubuntu22045/korea_c/opencv/data/";
 
-Mat src;
-Point2f srcQuad[4], dstQuad[4];
-
-void on_mouse(int event, int x, int y, int flags, void* userdata);
+void on_mouse(int event, int x, int y, int flags, void *userdata);
 
 int main()
 {
-    src = imread(folderPath + "card.bmp");
+    VideoCapture cap(0);
+    if (!cap.isOpened())
+    {
+        cerr << "동영상 파일이 없습니다!" << endl;
+    }
+    cout << "Frame width: " << cvRound(cap.get(CAP_PROP_FRAME_WIDTH)) << endl;
+    cout << "Frame height: " << cvRound(cap.get(CAP_PROP_FRAME_HEIGHT)) << endl;
+    auto fps = cap.get(CAP_PROP_FPS);
+    cout << "fps : " << cvRound(fps) << endl;
 
-    namedWindow("src");
-    setMouseCallback("src", on_mouse);
+    namedWindow("frame");
+    Mydata userdata;
+    setMouseCallback("frame", on_mouse, (void *)&userdata);
 
-    imshow("src",src);
+    Mat frame;
+    while (true)
+    {
+        cap >> userdata.frame;
+        if (userdata.frame.empty())
+            break; // 마지막 프레임 처리
+        for (int i = 0; i < 4; ++i)
+        {
+            circle(userdata.frame, Point(userdata.srcPts[i].x, userdata.srcPts[i].y), 5, Scalar(0,0,255), -1);
+        }
+        imshow("frame", userdata.frame);
+        if (waitKey(1000 / fps) == 27) // fps 조절 숫자.
+            break;
+    }
 
-    waitKey();
+    cap.release();
     destroyAllWindows();
     return 0;
 }
 
-void on_mouse(int event, int x, int y, int flags, void* userdata)
+void on_mouse(int event, int x, int y, int flags, void *userdata)
 {
+    Mydata *mydata = (Mydata *)userdata;
     static int cnt = 0;
-
     if (event == EVENT_LBUTTONDOWN)
     {
-        if(cnt < 4)
+        if (cnt < 4)
         {
-            srcQuad[cnt++] = Point2f(x,y);
-
-            circle(src, Point(x,y),5,Scalar(0,0,255),-1);
-            imshow("src",src);
-            if (cnt == 4)
-            {
-                int w = 200, h = 300;
-
-                dstQuad[0] = Point2f(0,0);
-                dstQuad[1] = Point2f(w-1,0);
-                dstQuad[2] = Point2f(w-1,h-1);
-                dstQuad[3] = Point2f(0,h-1);
-
-                Mat pers = getPerspectiveTransform(srcQuad, dstQuad);
-
-                Mat dst;
-                warpPerspective(src, dst, pers, Size(w,h));
-
-                imshow("dst", dst);
-            }
+            mydata->srcPts[cnt++] = Point2f(x, y);
+        }
+        if (cnt == 4)
+        {
+            int w = 200, h = 300;
+            mydata->dstPts[0] = Point2f(0, 0);
+            mydata->dstPts[1] = Point2f(w - 1, 0);
+            mydata->dstPts[2] = Point2f(w - 1, h - 1);
+            mydata->dstPts[3] = Point2f(0, h - 1);
+            Mat M = getPerspectiveTransform(mydata->srcPts, mydata->dstPts);
+            warpPerspective(mydata->frame, mydata->dst, M, Size(w, h));
+            imshow("dst", mydata->dst);
+            cnt = 0;
         }
     }
 }

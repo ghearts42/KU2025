@@ -1,4 +1,17 @@
 /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles/29_affine.dir
 /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles/30_perspective.dir
+/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles/30_perspectivePic.dir
+/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles/31_sobel.dir
+/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles/32_canny.dir
+/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles/33_houghline.dir
+/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles/33_houghlineP.dir
+/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles/34_houghCircle.dir
+/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles/35_color_split.dir
+/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles/35_color_split_2.dir
+/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles/36_inrange.dir
+/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles/37_threshold.dir
+/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles/38_morphology.dir
+/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles/39_.dir
+/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles/40_.dir
 /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles/edit_cache.dir
 /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles/rebuild_cache.dir

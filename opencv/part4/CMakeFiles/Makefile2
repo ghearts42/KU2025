@@ -65,6 +65,19 @@ CMAKE_BINARY_DIR = /home/hjpubuntu22045/korea_c/opencv/part4
 # The main recursive "all" target.
 all: CMakeFiles/29_affine.dir/all
 all: CMakeFiles/30_perspective.dir/all
+all: CMakeFiles/30_perspectivePic.dir/all
+all: CMakeFiles/31_sobel.dir/all
+all: CMakeFiles/32_canny.dir/all
+all: CMakeFiles/33_houghline.dir/all
+all: CMakeFiles/33_houghlineP.dir/all
+all: CMakeFiles/34_houghCircle.dir/all
+all: CMakeFiles/35_color_split.dir/all
+all: CMakeFiles/35_color_split_2.dir/all
+all: CMakeFiles/36_inrange.dir/all
+all: CMakeFiles/37_threshold.dir/all
+all: CMakeFiles/38_morphology.dir/all
+all: CMakeFiles/39_.dir/all
+all: CMakeFiles/40_.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,6 +87,19 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/29_affine.dir/clean
 clean: CMakeFiles/30_perspective.dir/clean
+clean: CMakeFiles/30_perspectivePic.dir/clean
+clean: CMakeFiles/31_sobel.dir/clean
+clean: CMakeFiles/32_canny.dir/clean
+clean: CMakeFiles/33_houghline.dir/clean
+clean: CMakeFiles/33_houghlineP.dir/clean
+clean: CMakeFiles/34_houghCircle.dir/clean
+clean: CMakeFiles/35_color_split.dir/clean
+clean: CMakeFiles/35_color_split_2.dir/clean
+clean: CMakeFiles/36_inrange.dir/clean
+clean: CMakeFiles/37_threshold.dir/clean
+clean: CMakeFiles/38_morphology.dir/clean
+clean: CMakeFiles/39_.dir/clean
+clean: CMakeFiles/40_.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -127,6 +153,344 @@ CMakeFiles/30_perspective.dir/rule: cmake_check_build_system
 CMakeFiles/30_perspective.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/30_perspective.dir/build.make CMakeFiles/30_perspective.dir/clean
 .PHONY : CMakeFiles/30_perspective.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/30_perspectivePic.dir
+
+# All Build rule for target.
+CMakeFiles/30_perspectivePic.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/30_perspectivePic.dir/build.make CMakeFiles/30_perspectivePic.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/30_perspectivePic.dir/build.make CMakeFiles/30_perspectivePic.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles --progress-num=5,6 "Built target 30_perspectivePic"
+.PHONY : CMakeFiles/30_perspectivePic.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/30_perspectivePic.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/30_perspectivePic.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles 0
+.PHONY : CMakeFiles/30_perspectivePic.dir/rule
+
+# Convenience name for target.
+30_perspectivePic: CMakeFiles/30_perspectivePic.dir/rule
+.PHONY : 30_perspectivePic
+
+# clean rule for target.
+CMakeFiles/30_perspectivePic.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/30_perspectivePic.dir/build.make CMakeFiles/30_perspectivePic.dir/clean
+.PHONY : CMakeFiles/30_perspectivePic.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/31_sobel.dir
+
+# All Build rule for target.
+CMakeFiles/31_sobel.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/31_sobel.dir/build.make CMakeFiles/31_sobel.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/31_sobel.dir/build.make CMakeFiles/31_sobel.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles --progress-num=7,8 "Built target 31_sobel"
+.PHONY : CMakeFiles/31_sobel.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/31_sobel.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/31_sobel.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles 0
+.PHONY : CMakeFiles/31_sobel.dir/rule
+
+# Convenience name for target.
+31_sobel: CMakeFiles/31_sobel.dir/rule
+.PHONY : 31_sobel
+
+# clean rule for target.
+CMakeFiles/31_sobel.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/31_sobel.dir/build.make CMakeFiles/31_sobel.dir/clean
+.PHONY : CMakeFiles/31_sobel.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/32_canny.dir
+
+# All Build rule for target.
+CMakeFiles/32_canny.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/32_canny.dir/build.make CMakeFiles/32_canny.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/32_canny.dir/build.make CMakeFiles/32_canny.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles --progress-num=9,10 "Built target 32_canny"
+.PHONY : CMakeFiles/32_canny.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/32_canny.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/32_canny.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles 0
+.PHONY : CMakeFiles/32_canny.dir/rule
+
+# Convenience name for target.
+32_canny: CMakeFiles/32_canny.dir/rule
+.PHONY : 32_canny
+
+# clean rule for target.
+CMakeFiles/32_canny.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/32_canny.dir/build.make CMakeFiles/32_canny.dir/clean
+.PHONY : CMakeFiles/32_canny.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/33_houghline.dir
+
+# All Build rule for target.
+CMakeFiles/33_houghline.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/33_houghline.dir/build.make CMakeFiles/33_houghline.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/33_houghline.dir/build.make CMakeFiles/33_houghline.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles --progress-num=11,12 "Built target 33_houghline"
+.PHONY : CMakeFiles/33_houghline.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/33_houghline.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/33_houghline.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles 0
+.PHONY : CMakeFiles/33_houghline.dir/rule
+
+# Convenience name for target.
+33_houghline: CMakeFiles/33_houghline.dir/rule
+.PHONY : 33_houghline
+
+# clean rule for target.
+CMakeFiles/33_houghline.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/33_houghline.dir/build.make CMakeFiles/33_houghline.dir/clean
+.PHONY : CMakeFiles/33_houghline.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/33_houghlineP.dir
+
+# All Build rule for target.
+CMakeFiles/33_houghlineP.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/33_houghlineP.dir/build.make CMakeFiles/33_houghlineP.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/33_houghlineP.dir/build.make CMakeFiles/33_houghlineP.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles --progress-num=13,14 "Built target 33_houghlineP"
+.PHONY : CMakeFiles/33_houghlineP.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/33_houghlineP.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/33_houghlineP.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles 0
+.PHONY : CMakeFiles/33_houghlineP.dir/rule
+
+# Convenience name for target.
+33_houghlineP: CMakeFiles/33_houghlineP.dir/rule
+.PHONY : 33_houghlineP
+
+# clean rule for target.
+CMakeFiles/33_houghlineP.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/33_houghlineP.dir/build.make CMakeFiles/33_houghlineP.dir/clean
+.PHONY : CMakeFiles/33_houghlineP.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/34_houghCircle.dir
+
+# All Build rule for target.
+CMakeFiles/34_houghCircle.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/34_houghCircle.dir/build.make CMakeFiles/34_houghCircle.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/34_houghCircle.dir/build.make CMakeFiles/34_houghCircle.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles --progress-num=15,16 "Built target 34_houghCircle"
+.PHONY : CMakeFiles/34_houghCircle.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/34_houghCircle.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/34_houghCircle.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles 0
+.PHONY : CMakeFiles/34_houghCircle.dir/rule
+
+# Convenience name for target.
+34_houghCircle: CMakeFiles/34_houghCircle.dir/rule
+.PHONY : 34_houghCircle
+
+# clean rule for target.
+CMakeFiles/34_houghCircle.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/34_houghCircle.dir/build.make CMakeFiles/34_houghCircle.dir/clean
+.PHONY : CMakeFiles/34_houghCircle.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/35_color_split.dir
+
+# All Build rule for target.
+CMakeFiles/35_color_split.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/35_color_split.dir/build.make CMakeFiles/35_color_split.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/35_color_split.dir/build.make CMakeFiles/35_color_split.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles --progress-num=17,18 "Built target 35_color_split"
+.PHONY : CMakeFiles/35_color_split.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/35_color_split.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/35_color_split.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles 0
+.PHONY : CMakeFiles/35_color_split.dir/rule
+
+# Convenience name for target.
+35_color_split: CMakeFiles/35_color_split.dir/rule
+.PHONY : 35_color_split
+
+# clean rule for target.
+CMakeFiles/35_color_split.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/35_color_split.dir/build.make CMakeFiles/35_color_split.dir/clean
+.PHONY : CMakeFiles/35_color_split.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/35_color_split_2.dir
+
+# All Build rule for target.
+CMakeFiles/35_color_split_2.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/35_color_split_2.dir/build.make CMakeFiles/35_color_split_2.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/35_color_split_2.dir/build.make CMakeFiles/35_color_split_2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles --progress-num=19,20 "Built target 35_color_split_2"
+.PHONY : CMakeFiles/35_color_split_2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/35_color_split_2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/35_color_split_2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles 0
+.PHONY : CMakeFiles/35_color_split_2.dir/rule
+
+# Convenience name for target.
+35_color_split_2: CMakeFiles/35_color_split_2.dir/rule
+.PHONY : 35_color_split_2
+
+# clean rule for target.
+CMakeFiles/35_color_split_2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/35_color_split_2.dir/build.make CMakeFiles/35_color_split_2.dir/clean
+.PHONY : CMakeFiles/35_color_split_2.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/36_inrange.dir
+
+# All Build rule for target.
+CMakeFiles/36_inrange.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/36_inrange.dir/build.make CMakeFiles/36_inrange.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/36_inrange.dir/build.make CMakeFiles/36_inrange.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles --progress-num=21,22 "Built target 36_inrange"
+.PHONY : CMakeFiles/36_inrange.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/36_inrange.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/36_inrange.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles 0
+.PHONY : CMakeFiles/36_inrange.dir/rule
+
+# Convenience name for target.
+36_inrange: CMakeFiles/36_inrange.dir/rule
+.PHONY : 36_inrange
+
+# clean rule for target.
+CMakeFiles/36_inrange.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/36_inrange.dir/build.make CMakeFiles/36_inrange.dir/clean
+.PHONY : CMakeFiles/36_inrange.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/37_threshold.dir
+
+# All Build rule for target.
+CMakeFiles/37_threshold.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/37_threshold.dir/build.make CMakeFiles/37_threshold.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/37_threshold.dir/build.make CMakeFiles/37_threshold.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles --progress-num=23,24 "Built target 37_threshold"
+.PHONY : CMakeFiles/37_threshold.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/37_threshold.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/37_threshold.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles 0
+.PHONY : CMakeFiles/37_threshold.dir/rule
+
+# Convenience name for target.
+37_threshold: CMakeFiles/37_threshold.dir/rule
+.PHONY : 37_threshold
+
+# clean rule for target.
+CMakeFiles/37_threshold.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/37_threshold.dir/build.make CMakeFiles/37_threshold.dir/clean
+.PHONY : CMakeFiles/37_threshold.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/38_morphology.dir
+
+# All Build rule for target.
+CMakeFiles/38_morphology.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/38_morphology.dir/build.make CMakeFiles/38_morphology.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/38_morphology.dir/build.make CMakeFiles/38_morphology.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles --progress-num=25,26 "Built target 38_morphology"
+.PHONY : CMakeFiles/38_morphology.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/38_morphology.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/38_morphology.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles 0
+.PHONY : CMakeFiles/38_morphology.dir/rule
+
+# Convenience name for target.
+38_morphology: CMakeFiles/38_morphology.dir/rule
+.PHONY : 38_morphology
+
+# clean rule for target.
+CMakeFiles/38_morphology.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/38_morphology.dir/build.make CMakeFiles/38_morphology.dir/clean
+.PHONY : CMakeFiles/38_morphology.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/39_.dir
+
+# All Build rule for target.
+CMakeFiles/39_.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/39_.dir/build.make CMakeFiles/39_.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/39_.dir/build.make CMakeFiles/39_.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles --progress-num=27,28 "Built target 39_"
+.PHONY : CMakeFiles/39_.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/39_.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/39_.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles 0
+.PHONY : CMakeFiles/39_.dir/rule
+
+# Convenience name for target.
+39_: CMakeFiles/39_.dir/rule
+.PHONY : 39_
+
+# clean rule for target.
+CMakeFiles/39_.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/39_.dir/build.make CMakeFiles/39_.dir/clean
+.PHONY : CMakeFiles/39_.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/40_.dir
+
+# All Build rule for target.
+CMakeFiles/40_.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/40_.dir/build.make CMakeFiles/40_.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/40_.dir/build.make CMakeFiles/40_.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles --progress-num=29,30 "Built target 40_"
+.PHONY : CMakeFiles/40_.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/40_.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/40_.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part4/CMakeFiles 0
+.PHONY : CMakeFiles/40_.dir/rule
+
+# Convenience name for target.
+40_: CMakeFiles/40_.dir/rule
+.PHONY : 40_
+
+# clean rule for target.
+CMakeFiles/40_.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/40_.dir/build.make CMakeFiles/40_.dir/clean
+.PHONY : CMakeFiles/40_.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
