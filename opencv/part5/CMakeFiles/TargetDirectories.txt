@@ -1,0 +1,12 @@
+/home/hjpubuntu22045/korea_c/opencv/part5/CMakeFiles/41_cascadeFace.dir
+/home/hjpubuntu22045/korea_c/opencv/part5/CMakeFiles/42_cascadeFaceCam.dir
+/home/hjpubuntu22045/korea_c/opencv/part5/CMakeFiles/43_hogDescriptor.dir
+/home/hjpubuntu22045/korea_c/opencv/part5/CMakeFiles/44_hogCompute.dir
+/home/hjpubuntu22045/korea_c/opencv/part5/CMakeFiles/45_qrcode.dir
+/home/hjpubuntu22045/korea_c/opencv/part5/CMakeFiles/46_aruco.dir
+/home/hjpubuntu22045/korea_c/opencv/part5/CMakeFiles/47_harrisconer.dir
+/home/hjpubuntu22045/korea_c/opencv/part5/CMakeFiles/48_fastCam.dir
+/home/hjpubuntu22045/korea_c/opencv/part5/CMakeFiles/49_matching.dir
+/home/hjpubuntu22045/korea_c/opencv/part5/CMakeFiles/50_knndigit.dir
+/home/hjpubuntu22045/korea_c/opencv/part5/CMakeFiles/edit_cache.dir
+/home/hjpubuntu22045/korea_c/opencv/part5/CMakeFiles/rebuild_cache.dir
