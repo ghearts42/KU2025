@@ -1,0 +1,6 @@
+/home/hjpubuntu22045/korea_c/opencv/part6/CMakeFiles/51_handpose.dir
+/home/hjpubuntu22045/korea_c/opencv/part6/CMakeFiles/52_handposecam.dir
+/home/hjpubuntu22045/korea_c/opencv/part6/CMakeFiles/54_openposeimage.dir
+/home/hjpubuntu22045/korea_c/opencv/part6/CMakeFiles/55_openposevideo.dir
+/home/hjpubuntu22045/korea_c/opencv/part6/CMakeFiles/edit_cache.dir
+/home/hjpubuntu22045/korea_c/opencv/part6/CMakeFiles/rebuild_cache.dir
