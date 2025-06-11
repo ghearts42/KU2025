@@ -4,25 +4,45 @@
 // https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
 //
 {
-  "configurations": [
-    {
-      "name": "Linux",
-      "includePath": [
-        "${workspaceFolder}/**",
-        "/usr/include/**",
-        // "/lib/modules/6.6.51+rpt-rpi-v8/source/include",
-        // "/usr/src/linux-headers-6.6.51+rpt-rpi-v8//arch/arm64/include/generated",
-        // "/usr/src/linux-headers-6.6.51+rpt-rpi-v8//include",
-        // "/usr/src/linux-headers-6.6.51+rpt-common-rpi/arch/arm64/include",
-        // "/usr/src/linux-headers-6.6.51+rpt-common-rpi/arch/arm64/include",
-        "/usr/include/python3.10"
-      ],
-      "defines": ["__KERNEL__", "MODULE"],
-      "compilerPath": "/usr/bin/gcc",
-      "cStandard": "c17",
-      "cppStandard": "c++23",
-      "intelliSenseMode": "linux-gcc-x64"
-    }
-  ],
-  "version": 4
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "/home/hjpubuntu22045/korea_c/src",
+                "/home/hjpubuntu22045/korea_c/lib/uart0",
+                "/home/hjpubuntu22045/korea_c/lib/lcd",
+                "/home/hjpubuntu22045/korea_c/lib/at25",
+                "/home/hjpubuntu22045/korea_c/lib/sht20",
+                "/home/hjpubuntu22045/korea_c/lib/uart1",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "/home/hjpubuntu22045/korea_c/src",
+                    "/home/hjpubuntu22045/korea_c/lib/uart0",
+                    "/home/hjpubuntu22045/korea_c/lib/lcd",
+                    "/home/hjpubuntu22045/korea_c/lib/at25",
+                    "/home/hjpubuntu22045/korea_c/lib/sht20",
+                    "/home/hjpubuntu22045/korea_c/lib/uart1",
+                    ""
+                ]
+            },
+            "defines": [
+                "F_CPU=16000000L",
+                "PLATFORMIO=60118",
+                "ARDUINO_AVR_ATmega128",
+                "__AVR_ATmega128__",
+                ""
+            ],
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++11",
+            "compilerPath": "/home/hjpubuntu22045/.platformio/packages/toolchain-atmelavr/bin/avr-gcc",
+            "compilerArgs": [
+                "-mmcu=atmega128",
+                ""
+            ]
+        }
+    ],
+    "version": 4
 }
