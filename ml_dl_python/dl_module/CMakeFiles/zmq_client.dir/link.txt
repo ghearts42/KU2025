@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/zmq_client.dir/zmq_client.cpp.o -o zmq_client  -lzmq 
