@@ -9,3 +9,6 @@ target_link_libraries(zmq_server PRIVATE zmq)
 
 add_executable(zmq_client zmq_client.cpp)
 target_link_libraries(zmq_client PRIVATE zmq)
+
+add_executable(60_google_vision 60_google_vision.cpp)
+target_link_libraries(60_google_vision ${OpenCV_LIBS})

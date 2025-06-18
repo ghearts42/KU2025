@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = /home/hjpubuntu22045/korea_c/ml_dl_python/dl_module
 # The main recursive "all" target.
 all: CMakeFiles/zmq_server.dir/all
 all: CMakeFiles/zmq_client.dir/all
+all: CMakeFiles/60_google_vision.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,6 +75,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/zmq_server.dir/clean
 clean: CMakeFiles/zmq_client.dir/clean
+clean: CMakeFiles/60_google_vision.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -83,7 +85,7 @@ clean: CMakeFiles/zmq_client.dir/clean
 CMakeFiles/zmq_server.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zmq_server.dir/build.make CMakeFiles/zmq_server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zmq_server.dir/build.make CMakeFiles/zmq_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hjpubuntu22045/korea_c/ml_dl_python/dl_module/CMakeFiles --progress-num=3,4 "Built target zmq_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hjpubuntu22045/korea_c/ml_dl_python/dl_module/CMakeFiles --progress-num=5,6 "Built target zmq_server"
 .PHONY : CMakeFiles/zmq_server.dir/all
 
 # Build rule for subdir invocation for target.
@@ -109,7 +111,7 @@ CMakeFiles/zmq_server.dir/clean:
 CMakeFiles/zmq_client.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zmq_client.dir/build.make CMakeFiles/zmq_client.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zmq_client.dir/build.make CMakeFiles/zmq_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hjpubuntu22045/korea_c/ml_dl_python/dl_module/CMakeFiles --progress-num=1,2 "Built target zmq_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hjpubuntu22045/korea_c/ml_dl_python/dl_module/CMakeFiles --progress-num=3,4 "Built target zmq_client"
 .PHONY : CMakeFiles/zmq_client.dir/all
 
 # Build rule for subdir invocation for target.
@@ -127,6 +129,32 @@ zmq_client: CMakeFiles/zmq_client.dir/rule
 CMakeFiles/zmq_client.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zmq_client.dir/build.make CMakeFiles/zmq_client.dir/clean
 .PHONY : CMakeFiles/zmq_client.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/60_google_vision.dir
+
+# All Build rule for target.
+CMakeFiles/60_google_vision.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/60_google_vision.dir/build.make CMakeFiles/60_google_vision.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/60_google_vision.dir/build.make CMakeFiles/60_google_vision.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hjpubuntu22045/korea_c/ml_dl_python/dl_module/CMakeFiles --progress-num=1,2 "Built target 60_google_vision"
+.PHONY : CMakeFiles/60_google_vision.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/60_google_vision.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/ml_dl_python/dl_module/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/60_google_vision.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/ml_dl_python/dl_module/CMakeFiles 0
+.PHONY : CMakeFiles/60_google_vision.dir/rule
+
+# Convenience name for target.
+60_google_vision: CMakeFiles/60_google_vision.dir/rule
+.PHONY : 60_google_vision
+
+# clean rule for target.
+CMakeFiles/60_google_vision.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/60_google_vision.dir/build.make CMakeFiles/60_google_vision.dir/clean
+.PHONY : CMakeFiles/60_google_vision.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

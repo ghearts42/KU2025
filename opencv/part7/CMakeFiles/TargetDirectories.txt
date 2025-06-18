@@ -1,0 +1,5 @@
+/home/hjpubuntu22045/korea_c/opencv/part7/CMakeFiles/60_google_vision.dir
+/home/hjpubuntu22045/korea_c/opencv/part7/CMakeFiles/61_google_camera.dir
+/home/hjpubuntu22045/korea_c/opencv/part7/CMakeFiles/62_dnnface.dir
+/home/hjpubuntu22045/korea_c/opencv/part7/CMakeFiles/edit_cache.dir
+/home/hjpubuntu22045/korea_c/opencv/part7/CMakeFiles/rebuild_cache.dir

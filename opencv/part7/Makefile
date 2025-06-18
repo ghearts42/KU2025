@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hjpubuntu22045/korea_c/ml_dl_python/dl_module
+CMAKE_SOURCE_DIR = /home/hjpubuntu22045/korea_c/opencv/part7
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hjpubuntu22045/korea_c/ml_dl_python/dl_module
+CMAKE_BINARY_DIR = /home/hjpubuntu22045/korea_c/opencv/part7
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/ml_dl_python/dl_module/CMakeFiles /home/hjpubuntu22045/korea_c/ml_dl_python/dl_module//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part7/CMakeFiles /home/hjpubuntu22045/korea_c/opencv/part7//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/ml_dl_python/dl_module/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjpubuntu22045/korea_c/opencv/part7/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,32 +117,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named zmq_server
-
-# Build rule for target.
-zmq_server: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zmq_server
-.PHONY : zmq_server
-
-# fast build rule for target.
-zmq_server/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zmq_server.dir/build.make CMakeFiles/zmq_server.dir/build
-.PHONY : zmq_server/fast
-
-#=============================================================================
-# Target rules for targets named zmq_client
-
-# Build rule for target.
-zmq_client: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zmq_client
-.PHONY : zmq_client
-
-# fast build rule for target.
-zmq_client/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zmq_client.dir/build.make CMakeFiles/zmq_client.dir/build
-.PHONY : zmq_client/fast
-
-#=============================================================================
 # Target rules for targets named 60_google_vision
 
 # Build rule for target.
@@ -154,6 +128,32 @@ zmq_client/fast:
 60_google_vision/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/60_google_vision.dir/build.make CMakeFiles/60_google_vision.dir/build
 .PHONY : 60_google_vision/fast
+
+#=============================================================================
+# Target rules for targets named 61_google_camera
+
+# Build rule for target.
+61_google_camera: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 61_google_camera
+.PHONY : 61_google_camera
+
+# fast build rule for target.
+61_google_camera/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/61_google_camera.dir/build.make CMakeFiles/61_google_camera.dir/build
+.PHONY : 61_google_camera/fast
+
+#=============================================================================
+# Target rules for targets named 62_dnnface
+
+# Build rule for target.
+62_dnnface: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 62_dnnface
+.PHONY : 62_dnnface
+
+# fast build rule for target.
+62_dnnface/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/62_dnnface.dir/build.make CMakeFiles/62_dnnface.dir/build
+.PHONY : 62_dnnface/fast
 
 60_google_vision.o: 60_google_vision.cpp.o
 .PHONY : 60_google_vision.o
@@ -179,53 +179,53 @@ zmq_client/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/60_google_vision.dir/build.make CMakeFiles/60_google_vision.dir/60_google_vision.cpp.s
 .PHONY : 60_google_vision.cpp.s
 
-zmq_client.o: zmq_client.cpp.o
-.PHONY : zmq_client.o
+61_google_camera.o: 61_google_camera.cpp.o
+.PHONY : 61_google_camera.o
 
 # target to build an object file
-zmq_client.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zmq_client.dir/build.make CMakeFiles/zmq_client.dir/zmq_client.cpp.o
-.PHONY : zmq_client.cpp.o
+61_google_camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/61_google_camera.dir/build.make CMakeFiles/61_google_camera.dir/61_google_camera.cpp.o
+.PHONY : 61_google_camera.cpp.o
 
-zmq_client.i: zmq_client.cpp.i
-.PHONY : zmq_client.i
+61_google_camera.i: 61_google_camera.cpp.i
+.PHONY : 61_google_camera.i
 
 # target to preprocess a source file
-zmq_client.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zmq_client.dir/build.make CMakeFiles/zmq_client.dir/zmq_client.cpp.i
-.PHONY : zmq_client.cpp.i
+61_google_camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/61_google_camera.dir/build.make CMakeFiles/61_google_camera.dir/61_google_camera.cpp.i
+.PHONY : 61_google_camera.cpp.i
 
-zmq_client.s: zmq_client.cpp.s
-.PHONY : zmq_client.s
+61_google_camera.s: 61_google_camera.cpp.s
+.PHONY : 61_google_camera.s
 
 # target to generate assembly for a file
-zmq_client.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zmq_client.dir/build.make CMakeFiles/zmq_client.dir/zmq_client.cpp.s
-.PHONY : zmq_client.cpp.s
+61_google_camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/61_google_camera.dir/build.make CMakeFiles/61_google_camera.dir/61_google_camera.cpp.s
+.PHONY : 61_google_camera.cpp.s
 
-zmq_server.o: zmq_server.cpp.o
-.PHONY : zmq_server.o
+62_dnnface.o: 62_dnnface.cpp.o
+.PHONY : 62_dnnface.o
 
 # target to build an object file
-zmq_server.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zmq_server.dir/build.make CMakeFiles/zmq_server.dir/zmq_server.cpp.o
-.PHONY : zmq_server.cpp.o
+62_dnnface.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/62_dnnface.dir/build.make CMakeFiles/62_dnnface.dir/62_dnnface.cpp.o
+.PHONY : 62_dnnface.cpp.o
 
-zmq_server.i: zmq_server.cpp.i
-.PHONY : zmq_server.i
+62_dnnface.i: 62_dnnface.cpp.i
+.PHONY : 62_dnnface.i
 
 # target to preprocess a source file
-zmq_server.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zmq_server.dir/build.make CMakeFiles/zmq_server.dir/zmq_server.cpp.i
-.PHONY : zmq_server.cpp.i
+62_dnnface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/62_dnnface.dir/build.make CMakeFiles/62_dnnface.dir/62_dnnface.cpp.i
+.PHONY : 62_dnnface.cpp.i
 
-zmq_server.s: zmq_server.cpp.s
-.PHONY : zmq_server.s
+62_dnnface.s: 62_dnnface.cpp.s
+.PHONY : 62_dnnface.s
 
 # target to generate assembly for a file
-zmq_server.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zmq_server.dir/build.make CMakeFiles/zmq_server.dir/zmq_server.cpp.s
-.PHONY : zmq_server.cpp.s
+62_dnnface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/62_dnnface.dir/build.make CMakeFiles/62_dnnface.dir/62_dnnface.cpp.s
+.PHONY : 62_dnnface.cpp.s
 
 # Help Target
 help:
@@ -236,17 +236,17 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... 60_google_vision"
-	@echo "... zmq_client"
-	@echo "... zmq_server"
+	@echo "... 61_google_camera"
+	@echo "... 62_dnnface"
 	@echo "... 60_google_vision.o"
 	@echo "... 60_google_vision.i"
 	@echo "... 60_google_vision.s"
-	@echo "... zmq_client.o"
-	@echo "... zmq_client.i"
-	@echo "... zmq_client.s"
-	@echo "... zmq_server.o"
-	@echo "... zmq_server.i"
-	@echo "... zmq_server.s"
+	@echo "... 61_google_camera.o"
+	@echo "... 61_google_camera.i"
+	@echo "... 61_google_camera.s"
+	@echo "... 62_dnnface.o"
+	@echo "... 62_dnnface.i"
+	@echo "... 62_dnnface.s"
 .PHONY : help
 
 

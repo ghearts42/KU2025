@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/60_google_vision.dir/60_google_vision.cpp.o -o 60_google_vision 
